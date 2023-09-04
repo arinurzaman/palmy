@@ -146,7 +146,7 @@
                 <div class="col-md-12 wrap-about md-5 ftco-animate text-center">
                     <div class="heading-section mb-5 md-5 heading-section-with-line">
                         <div class="md-5">
-                            <span class="subheading">About Us</span>
+                            <span class="subheading">About Uss</span>
                         </div>
                     </div>
                     <div class="md-5">
