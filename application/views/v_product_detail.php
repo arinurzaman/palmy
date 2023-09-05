@@ -56,15 +56,29 @@
         </div>
     </nav>
     <!-- END nav -->
-
+    
+    <section class="home-slider js-fullheight owl-carousel">
+        <div class="slider-item js-fullheight" style="background-image: url(<?php echo base_url();?>./assets/images/bg-1.jpg);">
+            <div class="overlay"></div>
+            <div class="container">
+                <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-end" data-scrollax-parent="true">
+                    <div class="col-md-7 text ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+                        <h2 class="mb-4" style="color: white; text-transform: uppercase;" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">
+                        <?= $data['product_nama'] ?>
+                        </h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <section class="ftco-section ftc-no-pb">
-        <div class="container mt-5">
+        <div class="container">
             <div class="row no-gutters justify-content-center">
                 <div class="col-md-10">
                     <div class="row no-gutters">
                         <!-- <img src="<?= base_url('assets/images/product/' . $data['product_photo']) ?>" class="col-md-4 p-md-5 img img-2 order-md-last"> -->
-                        <div class="col-md-4 p-md-5 order-md-last mt-4">
+                        <div class="col-md-4 p-md-5 order-md-last">
                             <h6 class="mb-3">Specification</h6>
                             <p>Material :</p>
                             <p>Diameter :</p>
@@ -74,9 +88,8 @@
                         <div class="col-md-8 wrap-about pb-md-5 ftco-animate">
                             <div class="heading-section mb-md-5 md-5 heading-section-with-line">
                                 <div class="pr-md-5 mr-md-5">
-                                    <h2 class="mb-2"><?= $data['product_nama'] ?></h2>
+                                    <h2 class="mb-3"><?= $data['product_nama'] ?></h2>
                                     <img src="<?= base_url('assets/images/product/' . $data['product_photo']) ?>">
-                                    
                                 </div>
                             </div>
                             <div class="pr-md-5 mr-md-5">

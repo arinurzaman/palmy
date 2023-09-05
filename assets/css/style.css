@@ -457,8 +457,8 @@ pre {
 
 .container {
   width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: 20px;
+  padding-left: 40px;
   margin-right: auto;
   margin-left: auto; }
   @media (min-width: 576px) {
@@ -7987,7 +7987,7 @@ h1, h2, h3, h4, h5,
 
 .blog-entry .meta {
   width: 100px;
-  text-align: right; }
+  text-align: center; }
   .blog-entry .meta > div {
     display: block;
     margin-right: 5px;

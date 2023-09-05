@@ -57,14 +57,14 @@ class M_product extends CI_Model
 
 	function tampil_data()
     {
-        $this->db->order_by('product_photo', 'DESC');
+        $this->db->order_by('product_id', 'ASC');
         $query = $this->db->get('tbl_product');
         return $query->result();
     }
 
 	function tampil_data_product()
     {
-        $this->db->order_by('product_photo', 'DESC');
+        $this->db->order_by('product_id', 'ASC');
         $query = $this->db->get('tbl_product');
         return $query->result();
     }

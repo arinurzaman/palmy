@@ -58,6 +58,21 @@
     </nav>
     <!-- END nav -->
 
+    <section class="home-slider js-fullheight owl-carousel">
+        <div class="slider-item js-fullheight" style="background-image: url(<?php echo base_url();?>./assets/images/bg-1.jpg);">
+            <div class="overlay"></div>
+            <div class="container">
+                <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-end" data-scrollax-parent="true">
+                    <div class="col-md-7 text ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+                        <h2 class="mb-4" style="color: white; text-transform: uppercase;" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">
+                        <?= $slug; ?>
+                        </h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section class="ftco-section">
         <div class="container">
             <div class="row justify-content-center pb-3 mt-4">

@@ -8,7 +8,9 @@
     <link rel="shortcut icon" href="<?= base_url('assets/') ?>images/Palmy.PNG" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css">
     <link rel="stylesheet" href="<?= base_url('assets/') ?>css/open-iconic-bootstrap.min.css" />
     <link rel="stylesheet" href="<?= base_url('assets/') ?>css/animate.css" />
@@ -31,6 +33,7 @@
     </script>
     <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
     </script>
+    
 </head>
 
 <body>
@@ -155,13 +158,14 @@
                             plantation products and focuses on the palm oil industry, We also innovate in waste products
                             turning into high economic value products, such as Palmrope, Palmesh etc.
                             We are committed Increasing the level of community welfare though empowering local
-                            communities. <a href="<?= base_url('About'); ?>"> <i><b>Read More</b></i> </a> 
+                            communities. <a href="<?= base_url('About'); ?>"> <i><b>Read More</b></i> </a>
                         </p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
 
     <section class="ftco-section ftc-no-pb">
         <div class="container">
@@ -182,21 +186,23 @@
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <?php foreach ($product as $p) { ?>
-                    <div class="col-md-4 ftco-animate">
-                        <div class="blog-entry">
-                            <a href="<?php echo site_url('product/detail_product/' . $p->product_id); ?>" style="color: grey;" class="block-20 text-center">
-                                <img src="<?= base_url('assets/images/product/' . $p->product_photo) ?>">
-                            </a>
-                            <div class="desc text-center">
-                                <h4 class="heading mt-3">
+            <div class="container">
+                <div class="row slickslider">
+                    <?php foreach ($product as $p) { ?>
+                        <div class="col">
+                            <div class="blog-entry">
+                                <a href="<?php echo site_url('product/detail_product/' . $p->product_id); ?>" style="color: grey;" class="block-20 text-center">
+                                    <img src="<?= base_url('assets/images/product/' . $p->product_photo) ?>">
+                                </a>
+                                <h4 class="mt-3">
                                     <?= $p->product_nama ?>
                                 </h4>
+                                <!-- <div class="desc">
+                                </div> -->
                             </div>
                         </div>
-                    </div>
-                <?php } ?>
+                    <?php } ?>
+                </div>
             </div>
         </div>
     </section>
@@ -219,9 +225,9 @@
                 </div>
             </div>
 
-            <div class="row">
+            <div class="row slicknews">
                 <?php foreach ($news as $n) { ?>
-                    <div class="col-md-4 ftco-animate">
+                    <div class="col">
                         <div class="blog-entry">
                             <a href="" class="block-20">
                                 <img src="<?= base_url('assets/images/' . $n->tulisan_gambar) ?>">
@@ -319,8 +325,11 @@
             <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00" />
         </svg>
     </div>
+    
+    
 
-    <script src="<?= base_url('assets/') ?>js/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- <script src="<?= base_url('assets/') ?>js/jquery.min.js"></script> -->
     <script src="<?= base_url('assets/') ?>js/jquery-migrate-3.0.1.min.js"></script>
     <script src="<?= base_url('assets/') ?>js/popper.min.js"></script>
     <script src="<?= base_url('assets/') ?>js/bootstrap.min.js"></script>
@@ -334,10 +343,83 @@
     <script src="<?= base_url('assets/') ?>js/bootstrap-datepicker.js"></script>
     <script src="<?= base_url('assets/') ?>js/jquery.timepicker.min.js"></script>
     <script src="<?= base_url('assets/') ?>js/scrollax.min.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false">
-    </script>
     <script src="<?= base_url('assets/') ?>js/google-map.js"></script>
     <script src="<?= base_url('assets/') ?>js/main.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script type="text/javascript">
+        $('.slickslider').slick({
+            dots: true,
+            infinite: false,
+            speed: 300,
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            responsive: [{
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 3,
+                        infinite: true,
+                        dots: true
+                    }
+                },
+                {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }
+                // You can unslick at a given breakpoint now by adding:
+                // settings: "unslick"
+                // instead of a settings object
+            ]
+        });
+    </script>
+    <script type="text/javascript">
+        $('.slicknews').slick({
+            dots: true,
+            infinite: false,
+            speed: 300,
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            responsive: [{
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 3,
+                        infinite: true,
+                        dots: true
+                    }
+                },
+                {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }
+                // You can unslick at a given breakpoint now by adding:
+                // settings: "unslick"
+                // instead of a settings object
+            ]
+        });
+    </script>
 </body>
 
 </html>

@@ -61,7 +61,7 @@
         <div class="slider-item js-fullheight" style="background-image:url(assets/images/bg-1.jpg);">
             <div class="overlay"></div>
             <div class="container">
-                <div class="row slider-text justify-content-center align-items-center">
+                <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-center">
                     <div class="col-md-7 col-sm-12 text-center ftco-animate">
                         <h1 class="mb-3 mt-5 bread">Products</h1>
                         <p class="breadcrumbs"><span class="mr-2"><a href="<?= base_url('Home')?>">Home</a></span>
