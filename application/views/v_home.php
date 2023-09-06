@@ -27,11 +27,11 @@
     <script type="text/javascript">
         function googleTranslateElementInit() {
             new google.translate.TranslateElement({
-                pageLanguage: 'id'
+                pageLanguage: 'en'
             }, 'google_translate_element');
         }
     </script>
-    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+    <script type="text/javascript" src="<?= base_url('assets/') ?>js/googletranslate.js"">
     </script>
     
 </head>
@@ -66,6 +66,20 @@
                     <li class="nav-item">
                         <a href="<?= base_url('Contact'); ?>" class="nav-link">Contact</a>
                     </li>
+                    <li class="nav-item" style="position: relative;">
+                        <div id="google_translate_element" style="position: relative; opacity: 0;"></div>
+                        <button class="btn btn-light gtranslate"><span class="icon icon-translate"></span><span class="text"> Pilih Bahasa</span></button>
+                        <!-- <a href="" style="position: absolute; left: 0; top: 0; z-index: -1; margin-top:14px; color:white">Translate</a> -->
+                    </li>
+                    <!-- <div style="position: relative;">
+                        <div id="google_translate_element" style="position: relative; opacity: 0;"></div>
+                        <li style="position: absolute; left: 0; top: 0; z-index: -1; margin-top:14px; color:white">Translate</li>
+                    </div> -->
+
+                    <!-- <li class="nav-item mt-2">
+                        <ul id="google_translate_element"></ul>
+                        <div id="google_translate_element"></div>
+                    </li> -->
                 </ul>
             </div>
         </div>
