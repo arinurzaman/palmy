@@ -27,8 +27,7 @@
         }, 'google_translate_element');
     }
     </script>
-    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
-    </script>
+    <script type="text/javascript" src="<?= base_url('assets/') ?>js/googletranslate.js"></script>
 </head>
 
 <body>
@@ -50,6 +49,10 @@
                     <li class="nav-item"><a href="<?= base_url('Product')?>" class="nav-link">Products</a></li>
                     <li class="nav-item"><a href="<?= base_url('News')?>" class="nav-link">News & Events</a></li>
                     <li class="nav-item"><a href="<?= base_url('Contact')?>" class="nav-link">Contact</a></li>
+                    <li class="nav-item" style="position: relative;">
+                        <div id="google_translate_element" style="position: relative; opacity: 0;"></div>
+                        <button class="btn btn-light gtranslate"><span class="icon icon-translate"></span><span class="text"> Pilih Bahasa</span></button>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -60,15 +63,13 @@
         <div class="slider-item js-fullheight" style="background-image:url(assets/images/bg-1.jpg);">
             <div class="overlay"></div>
             <div class="container">
-                <div class="row slider-text justify-content-center align-items-center">
-
+                <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-center">
                     <div class="col-md-7 col-sm-12 text-center ftco-animate">
                         <h1 class="mb-3 mt-5 bread">Gallery</h1>
-                        <p class="breadcrumbs"><span class="mr-2"><a href="<?= base_url('Home')?>">Home</a></span>
+                        <p class="breadcrumbs"><span class="mr-2"><a href="<?= base_url('Home') ?>">Home</a></span>
                             <span>Gallery</span>
                         </p>
                     </div>
-
                 </div>
             </div>
         </div>
@@ -152,9 +153,6 @@ Blok Q, Kav C-20, Kel. Pondok Jaya, Kec. Pondok Aren, <br />
                                 <li>
                                     <a href="#"><span class="icon icon-envelope"></span><span
                                             class="text">Gilang.ramadhan@mpa.co.id</span></a>
-                                </li>
-                                <li>
-                                    <div id="google_translate_element"></div>
                                 </li>
                             </ul>
                         </div>

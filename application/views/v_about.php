@@ -27,8 +27,7 @@
         }, 'google_translate_element');
     }
     </script>
-    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
-    </script>
+    <script type="text/javascript" src="<?= base_url('assets/') ?>js/googletranslate.js"></script>
 </head>
 
 <body>
@@ -51,6 +50,10 @@
                     <li class="nav-item"><a href="<?= base_url('Product'); ?>" class="nav-link">Products</a></li>
                     <li class="nav-item"><a href="<?= base_url('News'); ?>" class="nav-link">News & Events</a></li>
                     <li class="nav-item"><a href="<?= base_url('Contact'); ?>" class="nav-link">Contact</a></li>
+                    <li class="nav-item" style="position: relative;">
+                        <div id="google_translate_element" style="position: relative; opacity: 0;"></div>
+                        <button class="btn btn-light gtranslate"><span class="icon icon-translate"></span><span class="text"> Pilih Bahasa</span></button>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -189,9 +192,6 @@ Blok Q, Kav C-20, Kel. Pondok Jaya, Kec. Pondok Aren, <br />
                                 <li>
                                     <a href="#"><span class="icon icon-envelope"></span><span
                                             class="text">Gilang.ramadhan@mpa.co.id</span></a>
-                                </li>
-                                <li>
-                                    <div id="google_translate_element"></div>
                                 </li>
                             </ul>
                         </div>

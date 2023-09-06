@@ -27,12 +27,11 @@
     <script type="text/javascript">
         function googleTranslateElementInit() {
             new google.translate.TranslateElement({
-                pageLanguage: 'en'
+                pageLanguage: 'id'
             }, 'google_translate_element');
         }
     </script>
-    <script type="text/javascript" src="<?= base_url('assets/') ?>js/googletranslate.js"">
-    </script>
+    <script type="text/javascript" src="<?= base_url('assets/') ?>js/googletranslate.js"></script>
     
 </head>
 
@@ -69,17 +68,7 @@
                     <li class="nav-item" style="position: relative;">
                         <div id="google_translate_element" style="position: relative; opacity: 0;"></div>
                         <button class="btn btn-light gtranslate"><span class="icon icon-translate"></span><span class="text"> Pilih Bahasa</span></button>
-                        <!-- <a href="" style="position: absolute; left: 0; top: 0; z-index: -1; margin-top:14px; color:white">Translate</a> -->
                     </li>
-                    <!-- <div style="position: relative;">
-                        <div id="google_translate_element" style="position: relative; opacity: 0;"></div>
-                        <li style="position: absolute; left: 0; top: 0; z-index: -1; margin-top:14px; color:white">Translate</li>
-                    </div> -->
-
-                    <!-- <li class="nav-item mt-2">
-                        <ul id="google_translate_element"></ul>
-                        <div id="google_translate_element"></div>
-                    </li> -->
                 </ul>
             </div>
         </div>
@@ -309,9 +298,6 @@
                                 </li>
                                 <li>
                                     <a href="#"><span class="icon icon-envelope"></span><span class="text">Gilang.ramadhan@mpa.co.id</span></a>
-                                </li>
-                                <li>
-                                    <div id="google_translate_element"></div>
                                 </li>
                             </ul>
                         </div>
