@@ -21,11 +21,11 @@
     <link rel="stylesheet" href="<?= base_url('assets/') ?>css/icomoon.css">
     <link rel="stylesheet" href="<?= base_url('assets/') ?>css/style.css">
     <script type="text/javascript">
-        function googleTranslateElementInit() {
-            new google.translate.TranslateElement({
-                pageLanguage: 'id'
-            }, 'google_translate_element');
-        }
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement({
+            pageLanguage: 'id'
+        }, 'google_translate_element');
+    }
     </script>
     <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
     </script>
@@ -39,7 +39,8 @@
                 <img src="<?= base_url('assets/') ?>images/Palmy.png" width="50"> &nbsp; Palmy
             </a>
 
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
+                aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="oi oi-menu"></span> Menu
             </button>
 
@@ -56,15 +57,18 @@
         </div>
     </nav>
     <!-- END nav -->
-    
+
     <section class="home-slider js-fullheight owl-carousel">
-        <div class="slider-item js-fullheight" style="background-image: url(<?php echo base_url();?>./assets/images/bg-1.jpg);">
+        <div class="slider-item js-fullheight"
+            style="background-image: url(<?php echo base_url();?>./assets/images/bg-1.jpg);">
             <div class="overlay"></div>
             <div class="container">
-                <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-end" data-scrollax-parent="true">
+                <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-end"
+                    data-scrollax-parent="true">
                     <div class="col-md-7 text ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
-                        <h2 class="mb-4" style="color: white; text-transform: uppercase;" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">
-                        <?= $data['product_nama'] ?>
+                        <h2 class="mb-4" style="color: white; text-transform: uppercase;"
+                            data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">
+                            <?= $data['product_nama'] ?>
                         </h2>
                     </div>
                 </div>
@@ -80,10 +84,10 @@
                         <!-- <img src="<?= base_url('assets/images/product/' . $data['product_photo']) ?>" class="col-md-4 p-md-5 img img-2 order-md-last"> -->
                         <div class="col-md-4 p-md-5 order-md-last">
                             <h6 class="mb-3">Specification</h6>
-                            <p>Material :</p>
-                            <p>Diameter :</p>
-                            <p>Size :</p>
-                            <p>Streght :</p>
+                            <p>Material : Kulit Babi</p>
+                            <p>Diameter : 10 CM</p>
+                            <p>Size : 10 CM</p>
+                            <p>Streght : 100 TON</p>
                         </div>
                         <div class="col-md-8 wrap-about pb-md-5 ftco-animate">
                             <div class="heading-section mb-md-5 md-5 heading-section-with-line">
@@ -127,10 +131,12 @@
                         <div class="block-23 mb-3">
                             <ul>
                                 <li><span class="icon icon-map-marker"></span><span class="text">Kebayoran Square
-                                        Blok Q, Kav C-20, Kel. Pondok Jaya, Kec. Pondok Aren, <br> Tangerang Selatan, Banten - 15220 </span></li>
+                                        Blok Q, Kav C-20, Kel. Pondok Jaya, Kec. Pondok Aren, <br> Tangerang Selatan,
+                                        Banten - 15220 </span></li>
                                 <li><a href="#"><span class="icon icon-phone"></span><span class="text">(021) 5205000,
                                             5251008 Ext. 73146</span></a></li>
-                                <li><a href="#"><span class="icon icon-envelope"></span><span class="text">Gilang.ramadhan@mpa.co.id</span></a></li>
+                                <li><a href="#"><span class="icon icon-envelope"></span><span
+                                            class="text">Gilang.ramadhan@mpa.co.id</span></a></li>
                                 <li>
                                     <div id="google_translate_element"></div>
                                 </li>
@@ -143,7 +149,7 @@
                 <div class="col-md-12">
                     <p>
                         Copyright &copy;<script>
-                            document.write(new Date().getFullYear());
+                        document.write(new Date().getFullYear());
                         </script> PT Mandiri Palmera Agrindo
                     </p>
                 </div>
@@ -154,7 +160,8 @@
     <!-- loader -->
     <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
             <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
-            <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00" />
+            <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
+                stroke="#F96D00" />
         </svg></div>
 
 
