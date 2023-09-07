@@ -159,16 +159,16 @@ $jum_pesan = $query->num_rows();
                                         </thead>
                                         <tbody>
                                             <?php
-                          $no = 0;
-                          foreach ($data->result_array() as $i) :
-                          $no++;
-                          $id           = $i['product_id'];
-                          $nama         = $i['product_nama'];
-                          $title        = $i['product_title'];
-                          $ket          = $i['product_ket'];
-                          $spesifikasi  = $i['product_spesifikasi'];
-                          $photo        = $i['product_photo'];
-                      ?>
+                                                $no = 0;
+                                                foreach ($data->result_array() as $i) :
+                                                $no++;
+                                                $id           = $i['product_id'];
+                                                $nama         = $i['product_nama'];
+                                                $title        = $i['product_title'];
+                                                $ket          = $i['product_ket'];
+                                                $spesifikasi  = $i['product_spesifikasi'];
+                                                $photo        = $i['product_photo'];
+                                            ?>
                                             <tr>
                                                 <?php if (empty($photo)) : ?>
                                                 <td><img width="40" height="40" class="img-circle"
@@ -256,8 +256,40 @@ $jum_pesan = $query->num_rows();
                         <div class="form-group">
                             <label for="spesifikasi" class="col-sm-4 control-label">Spesifikasi</label>
                             <div class="col-sm-7">
-                                <textarea name="xspesifikasi" id="xspesifikasi" class="form-control" cols="30" rows="10"
+                                <textarea name="xspesifikasi" id="xspesifikasi" class="form-control" cols="5"
                                     placeholder="Spesifikasi" required></textarea>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="material" class="col-sm-4 control-label">Material</label>
+                            <div class="col-sm-7">
+                                <input type="text" name="xmaterial" class="form-control" id="ket" placeholder="Material"
+                                    required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="diameter" class="col-sm-4 control-label">Diameter</label>
+                            <div class="col-sm-7">
+                                <input type="number" name="xdiameter" class="form-control" id="ket"
+                                    placeholder="Diameter" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="size" class="col-sm-4 control-label">Size</label>
+                            <div class="col-sm-7">
+                                <input type="number" name="xsize" class="form-control" id="ket" placeholder="Size"
+                                    required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="streght" class="col-sm-4 control-label">Streght</label>
+                            <div class="col-sm-7">
+                                <input type="number" name="xstreght" class="form-control" id="ket" placeholder="Streght"
+                                    required>
                             </div>
                         </div>
 
@@ -286,6 +318,10 @@ $jum_pesan = $query->num_rows();
     $title        = $i['product_title'];
     $ket          = $i['product_ket'];
     $spesifikasi  = $i['product_spesifikasi'];
+    $material     = $i['product_material'];
+    $diameter     = $i['product_diameter'];
+    $size         = $i['product_size'];
+    $streght      = $i['product_streght'];
     $photo        = $i['product_photo'];
   ?>
 
@@ -324,8 +360,8 @@ $jum_pesan = $query->num_rows();
                         <div class="form-group">
                             <label for="ket" class="col-sm-4 control-label">Keterangan</label>
                             <div class="col-sm-7">
-                                <input type="text" name="xket" value="<?php echo $ket; ?>" class="form-control"
-                                    id="inputUserName" placeholder="Tempat Lahir" required>
+                                <input type="text" name="xket" value="<?php echo $ket; ?>" class="form-control" id=""
+                                    placeholder="Tempat Lahir" required>
                             </div>
                         </div>
 
@@ -334,6 +370,38 @@ $jum_pesan = $query->num_rows();
                             <div class="col-sm-7">
                                 <input type="text" name="xspesifikasi" value="<?php echo $spesifikasi; ?>"
                                     class="form-control" id="inputUserName" placeholder="Spesifikasi" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="material" class="col-sm-4 control-label">Material</label>
+                            <div class="col-sm-7">
+                                <input type="text" name="xmaterial" class="form-control"
+                                    value="<?php echo $material; ?>" placeholder="Material" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="diameter" class="col-sm-4 control-label">Diameter</label>
+                            <div class="col-sm-7">
+                                <input type="number" name="xdiameter" class="form-control"
+                                    value="<?php echo $diameter; ?>" placeholder="Diameter" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="size" class="col-sm-4 control-label">Size</label>
+                            <div class="col-sm-7">
+                                <input type="number" name="xsize" class="form-control" value="<?php echo $size; ?>"
+                                    placeholder="Size" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="streght" class="col-sm-4 control-label">Streght</label>
+                            <div class="col-sm-7">
+                                <input type="number" name="xstreght" class="form-control"
+                                    value="<?php echo $streght; ?>" placeholder="Streght" required>
                             </div>
                         </div>
 
@@ -362,6 +430,10 @@ $jum_pesan = $query->num_rows();
     $title        = $i['product_title'];
     $ket          = $i['product_ket'];
     $spesifikasi  = $i['product_spesifikasi'];
+    $material     = $i['product_material'];
+    $diameter     = $i['product_diameter'];
+    $size         = $i['product_size'];
+    $streght      = $i['product_streght'];
     $photo        = $i['product_photo'];
   ?>
     <!--Modal Hapus Product-->

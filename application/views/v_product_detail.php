@@ -84,10 +84,10 @@
                         <!-- <img src="<?= base_url('assets/images/product/' . $data['product_photo']) ?>" class="col-md-4 p-md-5 img img-2 order-md-last"> -->
                         <div class="col-md-4 p-md-5 order-md-last">
                             <h6 class="mb-3">Specification</h6>
-                            <p>Material : Kulit Babi</p>
-                            <p>Diameter : 10 CM</p>
-                            <p>Size : 10 CM</p>
-                            <p>Streght : 100 TON</p>
+                            <p>Material : <?= $data['product_material'] ?></p>
+                            <p>Diameter : <?= $data['product_diameter'] ?></p>
+                            <p>Size : <?= $data['product_size'] ?></p>
+                            <p>Streght : <?= $data['product_streght'] ?></p>
                         </div>
                         <div class="col-md-8 wrap-about pb-md-5 ftco-animate">
                             <div class="heading-section mb-md-5 md-5 heading-section-with-line">

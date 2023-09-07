@@ -49,8 +49,12 @@ class Product extends CI_Controller
 				$title			= strip_tags($this->input->post('xtitle'));
 				$ket			= strip_tags($this->input->post('xket'));
 				$spesifikasi	= strip_tags($this->input->post('xspesifikasi'));
+				$material		= strip_tags($this->input->post('xmaterial'));
+				$diameter		= strip_tags($this->input->post('xdiameter'));
+				$size			= strip_tags($this->input->post('xsize'));
+				$streght		= strip_tags($this->input->post('xstreght'));
 
-				$this->m_product->simpan_product($nama, $title, $ket, $spesifikasi, $photo);
+				$this->m_product->simpan_product($nama, $title, $ket, $spesifikasi, $material, $diameter, $size, $streght, $photo);
 				echo $this->session->set_flashdata('msg','success');
 				redirect('admin/product');
 			}else{
@@ -62,8 +66,12 @@ class Product extends CI_Controller
 				$title			= strip_tags($this->input->post('xtitle'));
 				$ket			= strip_tags($this->input->post('xket'));
 				$spesifikasi	= strip_tags($this->input->post('xspesifikasi'));
+				$material		= strip_tags($this->input->post('xmaterial'));
+				$diameter		= strip_tags($this->input->post('xdiameter'));
+				$size			= strip_tags($this->input->post('xsize'));
+				$streght		= strip_tags($this->input->post('xstreght'));
 
-			$this->m_product->simpan_product_tanpa_img($nama, $title, $ket, $spesifikasi);
+			$this->m_product->simpan_product_tanpa_img($nama, $title, $ket, $spesifikasi, $material, $diameter, $size, $streght);
 			echo $this->session->set_flashdata('msg','success');
 			redirect('admin/product');
 		}
@@ -103,8 +111,13 @@ class Product extends CI_Controller
 				$title			= strip_tags($this->input->post('xtitle'));
 				$ket			= strip_tags($this->input->post('xket'));
 				$spesifikasi	= strip_tags($this->input->post('xspesifikasi'));
+				$material		= strip_tags($this->input->post('xmaterial'));
+				$diameter		= strip_tags($this->input->post('xdiameter'));
+				$size			= strip_tags($this->input->post('xsize'));
+				$streght		= strip_tags($this->input->post('xstreght'));
 
-				$this->m_product->update_product($kode, $nama, $title, $ket, $spesifikasi, $photo);
+				$this->m_product->update_product($kode, $nama, $title, $ket, $spesifikasi, $material, $diameter, $size, $streght, $photo);
+				
 				echo $this->session->set_flashdata('msg','info');
 				redirect('admin/product');
 				
@@ -118,8 +131,12 @@ class Product extends CI_Controller
 				$title			= strip_tags($this->input->post('xtitle'));
 				$ket			= strip_tags($this->input->post('xket'));
 				$spesifikasi	= strip_tags($this->input->post('xspesifikasi'));
+				$material		= strip_tags($this->input->post('xmaterial'));
+				$diameter		= strip_tags($this->input->post('xdiameter'));
+				$size			= strip_tags($this->input->post('xsize'));
+				$streght		= strip_tags($this->input->post('xstreght'));
 
-				$this->m_product->update_product_tanpa_img($kode, $nama, $title, $ket, $spesifikasi);
+				$this->m_product->update_product_tanpa_img($kode, $nama, $title, $ket, $spesifikasi, $material, $diameter, $size, $streght);
 				echo $this->session->set_flashdata('msg','info');
 				redirect('admin/product');
 			} 
