@@ -9,8 +9,12 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet" />
     <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"> -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
+        integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
+        integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css">
     <link rel="stylesheet" href="<?= base_url('assets/') ?>css/open-iconic-bootstrap.min.css" />
     <link rel="stylesheet" href="<?= base_url('assets/') ?>css/animate.css" />
@@ -25,14 +29,14 @@
     <link rel="stylesheet" href="<?= base_url('assets/') ?>css/icomoon.css" />
     <link rel="stylesheet" href="<?= base_url('assets/') ?>css/style.css" />
     <script type="text/javascript">
-        function googleTranslateElementInit() {
-            new google.translate.TranslateElement({
-                pageLanguage: 'id'
-            }, 'google_translate_element');
-        }
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement({
+            pageLanguage: 'id'
+        }, 'google_translate_element');
+    }
     </script>
     <script type="text/javascript" src="<?= base_url('assets/') ?>js/googletranslate.js"></script>
-    
+
 </head>
 
 <body>
@@ -41,7 +45,8 @@
             <a class="navbar-brand" href="<?= base_url('Home'); ?>">
                 <img src="<?= base_url('assets/') ?>images/Palmy.png" width="50" /> &nbsp; Palmy
             </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
+                aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="oi oi-menu"></span> Menu
             </button>
 
@@ -67,7 +72,8 @@
                     </li>
                     <li class="nav-item" style="position: relative;">
                         <div id="google_translate_element" style="position: relative; opacity: 0;"></div>
-                        <button class="btn btn-light gtranslate"><span class="icon icon-translate"></span><span class="text"> Pilih Bahasa</span></button>
+                        <button class="btn btn-light gtranslate"><span class="icon icon-translate"></span><span
+                                class="text"> Pilih Bahasa</span></button>
                     </li>
                 </ul>
             </div>
@@ -79,9 +85,11 @@
         <div class="slider-item js-fullheight" style="background-image: url(assets/images/bg-1.jpg)">
             <div class="overlay"></div>
             <div class="container">
-                <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-end" data-scrollax-parent="true">
+                <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-end"
+                    data-scrollax-parent="true">
                     <div class="col-md-7 text ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
-                        <h2 class="mb-4" style="color: white; text-transform: uppercase;" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">
+                        <h2 class="mb-4" style="color: white; text-transform: uppercase;"
+                            data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">
                             The future is an
                             assemble of today.
                             Hence be great to craft
@@ -95,9 +103,11 @@
         <div class="slider-item js-fullheight" style="background-image: url(assets/images/bg-2.jpg)">
             <div class="overlay"></div>
             <div class="container">
-                <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-end" data-scrollax-parent="true">
+                <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-end"
+                    data-scrollax-parent="true">
                     <div class="col-md-7 text ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
-                        <h2 class="mb-4" style="color: white; text-transform: uppercase;" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">
+                        <h2 class="mb-4" style="color: white; text-transform: uppercase;"
+                            data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">
                             Our industry respect tradition.. <br> But we challenge ourselves to innovate...
                         </h2>
                     </div>
@@ -108,9 +118,11 @@
         <div class="slider-item js-fullheight" style="background-image: url(assets/images/bg-3.jpg)">
             <div class="overlay"></div>
             <div class="container">
-                <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-end" data-scrollax-parent="true">
+                <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-end"
+                    data-scrollax-parent="true">
                     <div class="col-md-7 text ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
-                        <h2 class="mb-4" style="color: white; text-transform: uppercase;" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">
+                        <h2 class="mb-4" style="color: white; text-transform: uppercase;"
+                            data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">
                             Enriching fruits appliances that support to all people
                         </h2>
                     </div>
@@ -121,9 +133,11 @@
         <div class="slider-item js-fullheight" style="background-image: url(assets/images/bg-4.jpg)">
             <div class="overlay"></div>
             <div class="container">
-                <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-end" data-scrollax-parent="true">
+                <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-end"
+                    data-scrollax-parent="true">
                     <div class="col-md-7 text ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
-                        <h2 class="mb-4" style="color: white; text-transform: uppercase;" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">
+                        <h2 class="mb-4" style="color: white; text-transform: uppercase;"
+                            data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">
                             Utilize the sustainable productivities to the local people
                         </h2>
                     </div>
@@ -134,9 +148,11 @@
         <div class="slider-item js-fullheight" style="background-image: url(assets/images/bg-1.jpg)">
             <div class="overlay"></div>
             <div class="container">
-                <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-end" data-scrollax-parent="true">
+                <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-end"
+                    data-scrollax-parent="true">
                     <div class="col-md-7 text ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
-                        <h2 class="mb-4" style="color: white; text-transform: uppercase;" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">
+                        <h2 class="mb-4" style="color: white; text-transform: uppercase;"
+                            data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">
                             Becoming the competitive, profitable, proffesional and transparent management
                         </h2>
                     </div>
@@ -192,18 +208,19 @@
             <div class="container">
                 <div class="row slickslider">
                     <?php foreach ($product as $p) { ?>
-                        <div class="col">
-                            <div class="blog-entry">
-                                <a href="<?php echo site_url('product/detail_product/' . $p->product_id); ?>" style="color: grey;" class="block-20 text-center">
-                                    <img src="<?= base_url('assets/images/product/' . $p->product_photo) ?>">
-                                </a>
-                                <h4 class="mt-3">
-                                    <?= $p->product_nama ?>
-                                </h4>
-                                <!-- <div class="desc">
+                    <div class="col">
+                        <div class="blog-entry">
+                            <a href="<?php echo site_url('product/detail_product/' . $p->product_id); ?>"
+                                style="color: grey;" class="block-20 text-center">
+                                <img src="<?= base_url('assets/images/product/' . $p->product_photo) ?>">
+                            </a>
+                            <h4 class="mt-3">
+                                <?= $p->product_nama ?>
+                            </h4>
+                            <!-- <div class="desc">
                                 </div> -->
-                            </div>
                         </div>
+                    </div>
                     <?php } ?>
                 </div>
             </div>
@@ -230,30 +247,30 @@
 
             <div class="row slicknews">
                 <?php foreach ($news as $n) { ?>
-                    <div class="col">
-                        <div class="blog-entry">
-                            <a href="" class="block-20">
-                                <img src="<?= base_url('assets/images/' . $n->tulisan_gambar) ?>">
-                            </a>
+                <div class="col">
+                    <div class="blog-entry">
+                        <a href="" class="block-20">
+                            <img src="<?= base_url('assets/images/' . $n->tulisan_gambar) ?>">
+                        </a>
 
-                            <div class="text d-flex py-3">
-                                <div class="meta mb-3">
-                                    <div><?= $n->tulisan_tanggal ?></div>
-                                    <div><?= $n->tulisan_author ?></div>
-                                    <div>
-                                        <span class="icon-eye"></span>
-                                        <?= $n->tulisan_views ?>
-                                    </div>
+                        <div class="text d-flex py-3">
+                            <div class="meta mb-3">
+                                <div><?= $n->tulisan_tanggal ?></div>
+                                <div><?= $n->tulisan_author ?></div>
+                                <div>
+                                    <span class="icon-eye"></span>
+                                    <?= $n->tulisan_views ?>
                                 </div>
-                                <div class="desc pl-3 text-left">
-                                    <h3 class="heading">
-                                        <a href="<?php echo site_url('artikel/' . $n->tulisan_slug); ?>"><?= $n->tulisan_judul ?>
-                                        </a>
-                                    </h3>
-                                </div>
+                            </div>
+                            <div class="desc pl-3 text-left">
+                                <h3 class="heading">
+                                    <a href="<?php echo site_url('artikel/' . $n->tulisan_slug); ?>"><?= $n->tulisan_judul ?>
+                                    </a>
+                                </h3>
                             </div>
                         </div>
                     </div>
+                </div>
                 <?php } ?>
             </div>
         </div>
@@ -297,7 +314,8 @@
                                             5251008 Ext. 73146</span></a>
                                 </li>
                                 <li>
-                                    <a href="#"><span class="icon icon-envelope"></span><span class="text">Gilang.ramadhan@mpa.co.id</span></a>
+                                    <a href="#"><span class="icon icon-envelope"></span><span
+                                            class="text">Gilang.ramadhan@mpa.co.id</span></a>
                                 </li>
                             </ul>
                         </div>
@@ -309,7 +327,7 @@
                     <p>
                         Copyright &copy;
                         <script>
-                            document.write(new Date().getFullYear());
+                        document.write(new Date().getFullYear());
                         </script>
                         PT Mandiri Palmera Agrindo
                     </p>
@@ -322,11 +340,12 @@
     <div id="ftco-loader" class="show fullscreen">
         <svg class="circular" width="48px" height="48px">
             <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
-            <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00" />
+            <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
+                stroke="#F96D00" />
         </svg>
     </div>
-    
-    
+
+
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- <script src="<?= base_url('assets/') ?>js/jquery.min.js"></script> -->
@@ -345,80 +364,83 @@
     <script src="<?= base_url('assets/') ?>js/scrollax.min.js"></script>
     <script src="<?= base_url('assets/') ?>js/google-map.js"></script>
     <script src="<?= base_url('assets/') ?>js/main.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+        integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <script type="text/javascript">
-        $('.slickslider').slick({
-            dots: true,
-            infinite: false,
-            speed: 300,
-            slidesToShow: 3,
-            slidesToScroll: 3,
-            responsive: [{
-                    breakpoint: 1024,
-                    settings: {
-                        slidesToShow: 3,
-                        slidesToScroll: 3,
-                        infinite: true,
-                        dots: true
-                    }
-                },
-                {
-                    breakpoint: 600,
-                    settings: {
-                        slidesToShow: 2,
-                        slidesToScroll: 2
-                    }
-                },
-                {
-                    breakpoint: 480,
-                    settings: {
-                        slidesToShow: 1,
-                        slidesToScroll: 1
-                    }
+    $('.slickslider').slick({
+        dots: true,
+        infinite: false,
+        speed: 300,
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        responsive: [{
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
+                    infinite: true,
+                    dots: true
                 }
-                // You can unslick at a given breakpoint now by adding:
-                // settings: "unslick"
-                // instead of a settings object
-            ]
-        });
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+            // You can unslick at a given breakpoint now by adding:
+            // settings: "unslick"
+            // instead of a settings object
+        ]
+    });
     </script>
     <script type="text/javascript">
-        $('.slicknews').slick({
-            dots: true,
-            infinite: false,
-            speed: 300,
-            slidesToShow: 2,
-            slidesToScroll: 1,
-            responsive: [{
-                    breakpoint: 1024,
-                    settings: {
-                        slidesToShow: 3,
-                        slidesToScroll: 3,
-                        infinite: true,
-                        dots: true
-                    }
-                },
-                {
-                    breakpoint: 600,
-                    settings: {
-                        slidesToShow: 2,
-                        slidesToScroll: 2
-                    }
-                },
-                {
-                    breakpoint: 480,
-                    settings: {
-                        slidesToShow: 1,
-                        slidesToScroll: 1
-                    }
+    $('.slicknews').slick({
+        dots: true,
+        infinite: false,
+        speed: 300,
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        responsive: [{
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
+                    infinite: true,
+                    dots: true
                 }
-                // You can unslick at a given breakpoint now by adding:
-                // settings: "unslick"
-                // instead of a settings object
-            ]
-        });
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+            // You can unslick at a given breakpoint now by adding:
+            // settings: "unslick"
+            // instead of a settings object
+        ]
+    });
     </script>
 </body>
 
