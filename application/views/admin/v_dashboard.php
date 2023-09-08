@@ -48,14 +48,14 @@
                         </a>
                     </li>
 
-                    <li>
+                    <!-- <li>
                         <a href="<?php echo base_url().'admin/slider'?>">
                             <i class="fa fa-image"></i> <span>Slider</span>
                             <span class="pull-right-container">
                                 <small class="label pull-right"></small>
                             </span>
                         </a>
-                    </li>
+                    </li> -->
 
                     <li class="treeview">
                         <a href="#">
