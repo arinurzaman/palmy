@@ -90,7 +90,7 @@
                     <p><span>Phone:</span> <a href="tel://1234567920">(021) 5205000, 5251008 Ext. 73146</a></p>
                 </div>
                 <div class="col-md-3">
-                    <p><span>Email:</span> <a href="mailto:info@yoursite.com">Gilang.ramadhan@mpa.co.id</a></p>
+                    <p><span>Email:</span> <a href="mailto:marketing@palmy.co.id">marketing@palmy.co.id</a></p>
                 </div>
                 <div class="col-md-3">
                     <p><span>Website</span> <a href="#">yoursite.com</a></p>
@@ -165,7 +165,7 @@
                                             5251008 Ext. 73146</span></a>
                                 </li>
                                 <li>
-                                    <a href="#"><span class="icon icon-envelope"></span><span class="text">Gilang.ramadhan@mpa.co.id</span></a>
+                                    <a href="mailto:marketing@palmy.co.id"><span class="icon icon-envelope"></span><span class="text">marketing@palmy.co.id</span></a>
                                 </li>
                             </ul>
                         </div>

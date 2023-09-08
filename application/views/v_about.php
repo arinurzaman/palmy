@@ -190,8 +190,8 @@ Blok Q, Kav C-20, Kel. Pondok Jaya, Kec. Pondok Aren, <br />
                                             5251008 Ext. 73146</span></a>
                                 </li>
                                 <li>
-                                    <a href="#"><span class="icon icon-envelope"></span><span
-                                            class="text">Gilang.ramadhan@mpa.co.id</span></a>
+                                    <a href="mailto:marketing@palmy.co.id"><span class="icon icon-envelope"></span><span
+                                            class="text">marketing@palmy.co.id</span></a>
                                 </li>
                             </ul>
                         </div>
