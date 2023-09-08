@@ -35,7 +35,7 @@
 
     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
         <div class="container">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="<?= base_url('Home')?>">
                 <img src="<?= base_url('assets/') ?>images/Palmy.png" width="50"> &nbsp; Palmy
             </a>
 
@@ -49,7 +49,7 @@
                     <li class="nav-item"><a href="<?= base_url('Home') ?>" class="nav-link">Home</a></li>
                     <li class="nav-item"><a href="<?= base_url('About') ?>" class="nav-link">About</a></li>
                     <li class="nav-item"><a href="<?= base_url('Gallery') ?>" class="nav-link">Gallery</a></li>
-                    <li class="nav-item active"><a href="<?= base_url('Product') ?>" class="nav-link">Products</a></li>
+                    <li class="nav-item"><a href="<?= base_url('Product') ?>" class="nav-link">Products</a></li>
                     <li class="nav-item"><a href="<?= base_url('News') ?>" class="nav-link">News & Events</a></li>
                     <li class="nav-item"><a href="<?= base_url('Contact') ?>" class="nav-link">Contact</a></li>
                 </ul>

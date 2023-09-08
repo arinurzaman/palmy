@@ -46,7 +46,7 @@
                     <li class="nav-item"><a href="<?= base_url('Home') ?>" class="nav-link">Home</a></li>
                     <li class="nav-item"><a href="<?= base_url('About') ?>" class="nav-link">About</a></li>
                     <li class="nav-item"><a href="<?= base_url('Gallery') ?>" class="nav-link">Gallery</a></li>
-                    <li class="nav-item active"><a href="<?= base_url('Product') ?>" class="nav-link">Products</a></li>
+                    <li class="nav-item"><a href="<?= base_url('Product') ?>" class="nav-link">Products</a></li>
                     <li class="nav-item"><a href="<?= base_url('News') ?>" class="nav-link">News & Events</a></li>
                     <li class="nav-item"><a href="<?= base_url('Contact') ?>" class="nav-link">Contact</a></li>
                     <li class="nav-item" style="position: relative;">
@@ -60,7 +60,7 @@
     <!-- END nav -->
 
     <section class="home-slider js-fullheight owl-carousel">
-        <div class="slider-item js-fullheight" style="background-image:url(assets/images/bg-1.jpg);">
+        <div class="slider-item js-fullheight" style="background-image:url(assets/images/bg-4.jpg);">
             <div class="overlay"></div>
             <div class="container">
                 <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-center">

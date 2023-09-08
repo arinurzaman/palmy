@@ -52,7 +52,7 @@
 
             <div class="collapse navbar-collapse" id="ftco-nav">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
+                    <li class="nav-item ">
                         <a href="<?= base_url('Home'); ?>" class="nav-link">Home</a>
                     </li>
                     <li class="nav-item">
@@ -145,7 +145,7 @@
             </div>
         </div>
 
-        <div class="slider-item js-fullheight" style="background-image: url(assets/images/bg-1.jpg)">
+        <div class="slider-item js-fullheight" style="background-image: url(assets/images/bg-5.jpg)">
             <div class="overlay"></div>
             <div class="container">
                 <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-end"
