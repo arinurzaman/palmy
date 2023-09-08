@@ -187,11 +187,13 @@ $jum_pesan = $query->num_rows();
 
                                                 <td style="text-align:right;">
                                                     <a class="btn" data-toggle="modal"
-                                                        data-target="#ModalEdit<?= $id; ?>"><span
-                                                            class="fa fa-pencil"></span></a>
+                                                        data-target="#ModalEdit<?= $id; ?>">
+                                                        <span class="fa fa-pencil"></span>
+                                                    </a>
                                                     <a class="btn" data-toggle="modal"
-                                                        data-target="#ModalHapus<?= $id; ?>"><span
-                                                            class="fa fa-trash"></span></a>
+                                                        data-target="#ModalHapus<?= $id; ?>">
+                                                        <span class="fa fa-trash"></span>
+                                                    </a>
                                                 </td>
                                             </tr>
                                             <?php endforeach; ?>

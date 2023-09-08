@@ -25,8 +25,8 @@
 <body class="hold-transition skin-blue sidebar-mini">
     <div class="wrapper">
         <?php
-        $this->load->view('admin/v_header');
-    ?>
+            $this->load->view('admin/v_header');
+        ?>
         <aside class="main-sidebar">
             <section class="sidebar">
                 <ul class="sidebar-menu">
@@ -66,7 +66,6 @@
                                     Kategori</a></li>
                         </ul>
                     </li>
-
                     <li>
                         <a href="<?php echo base_url().'admin/pengguna'?>">
                             <i class="fa fa-users"></i> <span>Pengguna</span>
@@ -131,7 +130,9 @@
             </section>
         </aside>
 
+        <!-- Content Wrapper. Contains page content -->
         <div class="content-wrapper">
+            <!-- Content Header (Page header) -->
             <section class="content-header">
                 <h1>
                     Gallery Photos
@@ -143,6 +144,7 @@
                 </ol>
             </section>
 
+            <!-- Main content -->
             <section class="content">
                 <div class="row">
                     <div class="col-xs-12">
@@ -150,36 +152,34 @@
 
                             <div class="box">
                                 <div class="box-header">
-                                    <a class="btn btn-success btn-flat" data-toggle="modal" data-target="#myModal"><span
-                                            class="fa fa-plus"></span> Add Photo</a>
+                                    <button type="button" class="btn btn-primary" data-toggle="modal"
+                                        data-target="#exampleModal">
+                                        Tambah Foto
+                                    </button>
                                 </div>
+                                <!-- /.box-header -->
                                 <div class="box-body">
                                     <table id="example1" class="table table-striped" style="font-size:13px;">
                                         <thead>
                                             <tr>
-                                                <th>No</th>
-                                                <th>Slider</th>
-                                                <th style="text-align:right;">Aksi</th>
+                                                <th>Title</th>
+                                                <th>Gambar</th>
+                                                <th style="text-align:right;">Action</th>
                                             </tr>
                                         </thead>
                                         <tbody>
-                                            <?php
-                                                $no = 1;
-                                                foreach ($slider as $s) {
-                                            ?>
+                                            <?php foreach ($image as $f) { ?>
                                             <tr>
-                                                <td><?= $no++;?></td>
-                                                <td><img src="<?= base_url('assets/images/slider/' . $s->slider_gambar) ?>"
-                                                        style="width:80px;"></td>
+                                                <td><?= $f->title ?></td>
+                                                <td width="10%" class="with-img"><img
+                                                        src="<?= base_url('assets/images/slider/' . $f->image) ?>"
+                                                        width="100%" /></td>
                                                 <td style="text-align:right;">
-                                                    <a class="btn" data-toggle="modal"
-                                                        data-target="#ModalEdit<?= $s->slider_id;?>"><span
-                                                            class="fa fa-pencil"></span>
-                                                    </a>
-                                                    <a onclick="javascript: return confirm('Apakah Anda Yakin Menghapus Slider Ini !!!')"
-                                                        class="fa fa-trash"
-                                                        href="<?= base_url() ?>admin/slider/delete/<?= $s->slider_id ?>/<?= $s->slider_gambar ?>">
-                                                    </a>
+                                                    <a href="<?= base_url('admin/Galeri/edit/' . $f->id) ?>"
+                                                        class="fa fa-pencil"></a>
+                                                    <a onclick="javascript: return confirm('Apakah Anda Yakin Menghapus Pengumuman Ini !!!')"
+                                                        href="<?= base_url() ?>admin/Galeri/delete/<?= $f->id ?>/<?= $f->image ?>"
+                                                        class="fa fa-trash" "></a>
                                                 </td>
                                             </tr>
                                             <?php } ?>
@@ -191,120 +191,134 @@
                     </div>
             </section>
         </div>
+        <!-- /.content-wrapper -->
+        <footer class=" main-footer">
+                                                        <div class="pull-right hidden-xs">
+                                                            <b>Version</b> 1.0
+                                                        </div>
+                                                        <strong>Copyright &copy; <?= date('Y'); ?> <a href="#">PT.
+                                                                Mandiri Palmera Agrindo</a>.</strong> All rights
+                                                        reserved.
+                                                        </footer>
+                                                        <div class="control-sidebar-bg"></div>
+                                </div>
 
-        <footer class="main-footer">
-            <div class="pull-right hidden-xs">
-                <b>Version</b> 1.0
-            </div>
-            <strong>Copyright &copy; <?= date('Y'); ?> <a href="#">PT. Mandiri Palmera Agrindo</a>.</strong> All rights
-            reserved.
-        </footer>
-        <div class="control-sidebar-bg"></div>
-    </div>
+                                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-body">
+                                                <form action="<?= base_url('admin/Slider/upload') ?>" method="POST"
+                                                    enctype="multipart/form-data">
+                                                    <div class="form-group">
+                                                        <label for="title">Title</label>
+                                                        <input type="text" class="form-control" id="title" name="title"
+                                                            placeholder="Title" required>
+                                                    </div>
 
-    <!--Modal Add Slider-->
-    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
-                            aria-hidden="true"><span class="fa fa-close"></span></span></button>
-                    <h4 class="modal-title" id="myModalLabel">Add Photo</h4>
-                </div>
-                <form class="form-horizontal" action="<?php echo base_url().'admin/Slider/upload'?>" method="post"
-                    enctype="multipart/form-data">
-                    <div class="modal-body">
-                        <div class="form-group">
-                            <label for="image" class="col-sm-4 control-label">Photo</label>
-                            <div class="col-sm-7">
-                                <input type="file" id="image" name="image" class="form-control mb-5px" required />
-                                <span class="text-danger">Maximal Size 2 MB</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default btn-flat" data-dismiss="modal">Close</button>
-                        <button type="submit" class="btn btn-primary btn-flat" id="simpan">Simpan</button>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
+                                                    <div class="form-group">
+                                                        <label for="image">Image</label>
+                                                        <input type="file" class="form-control" id="image" name="image"
+                                                            required>
+                                                        <small id="" class="form-text text-danger">Max size 2
+                                                            MB.</small>
+                                                    </div><br>
 
-    <script src="<?php echo base_url().'assets/plugins/jQuery/jquery-2.2.3.min.js'?>"></script>
-    <script src="<?php echo base_url().'assets/bootstrap/js/bootstrap.min.js'?>"></script>
-    <script src="<?php echo base_url().'assets/plugins/datatables/jquery.dataTables.min.js'?>"></script>
-    <script src="<?php echo base_url().'assets/plugins/datatables/dataTables.bootstrap.min.js'?>"></script>
-    <script src="<?php echo base_url().'assets/plugins/slimScroll/jquery.slimscroll.min.js'?>"></script>
-    <script src="<?php echo base_url().'assets/plugins/fastclick/fastclick.js'?>"></script>
-    <script src="<?php echo base_url().'assets/dist/js/app.min.js'?>"></script>
-    <script src="<?php echo base_url().'assets/dist/js/demo.js'?>"></script>
-    <script type="text/javascript" src="<?php echo base_url().'assets/plugins/toast/jquery.toast.min.js'?>"></script>
-    <script>
-    $(function() {
-        $("#example1").DataTable();
-        $('#example2').DataTable({
-            "paging": true,
-            "lengthChange": false,
-            "searching": false,
-            "ordering": true,
-            "info": true,
-            "autoWidth": false
-        });
-    });
-    </script>
-    <?php if($this->session->flashdata('msg')=='error'):?>
-    <script type="text/javascript">
-    $.toast({
-        heading: 'Error',
-        text: "Password dan Ulangi Password yang Anda masukan tidak sama.",
-        showHideTransition: 'slide',
-        icon: 'error',
-        hideAfter: false,
-        position: 'bottom-right',
-        bgColor: '#FF4859'
-    });
-    </script>
+                                                    <div class="text-left">
+                                                        <button type="button" class="btn btn-secondary"
+                                                            data-dismiss="modal">Close</button>
+                                                        <button type="submit" class="btn btn-primary">Save</button>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
 
-    <?php elseif($this->session->flashdata('msg')=='success'):?>
-    <script type="text/javascript">
-    $.toast({
-        heading: 'Success',
-        text: "Photo Berhasil disimpan ke database.",
-        showHideTransition: 'slide',
-        icon: 'success',
-        hideAfter: false,
-        position: 'bottom-right',
-        bgColor: '#7EC857'
-    });
-    </script>
-    <?php elseif($this->session->flashdata('msg')=='info'):?>
-    <script type="text/javascript">
-    $.toast({
-        heading: 'Info',
-        text: "Photo berhasil di update",
-        showHideTransition: 'slide',
-        icon: 'info',
-        hideAfter: false,
-        position: 'bottom-right',
-        bgColor: '#00C9E6'
-    });
-    </script>
-    <?php elseif($this->session->flashdata('msg')=='success-hapus'):?>
-    <script type="text/javascript">
-    $.toast({
-        heading: 'Success',
-        text: "Photo Berhasil dihapus.",
-        showHideTransition: 'slide',
-        icon: 'success',
-        hideAfter: false,
-        position: 'bottom-right',
-        bgColor: '#7EC857'
-    });
-    </script>
-    <?php else:?>
 
-    <?php endif;?>
+                                <script src="<?php echo base_url().'assets/plugins/jQuery/jquery-2.2.3.min.js'?>">
+                                </script>
+                                <script src="<?php echo base_url().'assets/bootstrap/js/bootstrap.min.js'?>"></script>
+                                <script
+                                    src="<?php echo base_url().'assets/plugins/datatables/jquery.dataTables.min.js'?>">
+                                </script>
+                                <script
+                                    src="<?php echo base_url().'assets/plugins/datatables/dataTables.bootstrap.min.js'?>">
+                                </script>
+                                <script
+                                    src="<?php echo base_url().'assets/plugins/slimScroll/jquery.slimscroll.min.js'?>">
+                                </script>
+                                <script src="<?php echo base_url().'assets/plugins/fastclick/fastclick.js'?>"></script>
+                                <script src="<?php echo base_url().'assets/dist/js/app.min.js'?>"></script>
+                                <script src="<?php echo base_url().'assets/dist/js/demo.js'?>"></script>
+                                <script type="text/javascript"
+                                    src="<?php echo base_url().'assets/plugins/toast/jquery.toast.min.js'?>"></script>
+                                <!-- page script -->
+                                <script>
+                                $(function() {
+                                    $("#example1").DataTable();
+                                    $('#example2').DataTable({
+                                        "paging": true,
+                                        "lengthChange": false,
+                                        "searching": false,
+                                        "ordering": true,
+                                        "info": true,
+                                        "autoWidth": false
+                                    });
+                                });
+                                </script>
+                                <?php if($this->session->flashdata('msg')=='error'):?>
+                                <script type="text/javascript">
+                                $.toast({
+                                    heading: 'Error',
+                                    text: "Password dan Ulangi Password yang Anda masukan tidak sama.",
+                                    showHideTransition: 'slide',
+                                    icon: 'error',
+                                    hideAfter: false,
+                                    position: 'bottom-right',
+                                    bgColor: '#FF4859'
+                                });
+                                </script>
+
+                                <?php elseif($this->session->flashdata('msg')=='success'):?>
+                                <script type="text/javascript">
+                                $.toast({
+                                    heading: 'Success',
+                                    text: "Photo Berhasil disimpan ke database.",
+                                    showHideTransition: 'slide',
+                                    icon: 'success',
+                                    hideAfter: false,
+                                    position: 'bottom-right',
+                                    bgColor: '#7EC857'
+                                });
+                                </script>
+                                <?php elseif($this->session->flashdata('msg')=='info'):?>
+                                <script type="text/javascript">
+                                $.toast({
+                                    heading: 'Info',
+                                    text: "Photo berhasil di update",
+                                    showHideTransition: 'slide',
+                                    icon: 'info',
+                                    hideAfter: false,
+                                    position: 'bottom-right',
+                                    bgColor: '#00C9E6'
+                                });
+                                </script>
+                                <?php elseif($this->session->flashdata('msg')=='success-hapus'):?>
+                                <script type="text/javascript">
+                                $.toast({
+                                    heading: 'Success',
+                                    text: "Photo Berhasil dihapus.",
+                                    showHideTransition: 'slide',
+                                    icon: 'success',
+                                    hideAfter: false,
+                                    position: 'bottom-right',
+                                    bgColor: '#7EC857'
+                                });
+                                </script>
+                                <?php else:?>
+
+                                <?php endif;?>
 </body>
 
 </html>
