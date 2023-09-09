@@ -76,13 +76,13 @@
     </section>
 
     <section class="ftco-section">
-        <div class="container-fluid">
+        <div class="container">
             <div class="row no-gutters">
                 <?php  foreach($image as $i){ ?>
-                <div class="col-md-6 col-lg-3 ftco-animate">
+                <div class="col-md-6 col-lg-3">
                     <div class="project">
                         <img src="<?= base_url('assets/images/' . $i->galeri_gambar)?>" class="img-fluid"
-                            alt="Colorlib Template">
+                            alt="<?= $i->galeri_judul?>">
                         <div class="text">
                             <h3><?= $i->galeri_judul?></h3>
                         </div>
