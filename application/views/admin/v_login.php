@@ -20,7 +20,7 @@
     </div>
     <!-- /.login-logo -->
     <div class="login-box-body">
-      <p class="login-box-msg"> <img width="100px;" src="<?php echo base_url() . 'assets/images/palmy.png' ?>"></p>
+      <p class="login-box-msg"> <img width="100px;" src="<?php echo base_url() . 'assets/images/Palmy.png' ?>"></p>
       <h4 class="text-center">PT. Mandiri Palmera Agrindo</h4>
       <hr />
       <form action="<?php echo site_url() . 'admin/login/auth' ?>" method="post">
