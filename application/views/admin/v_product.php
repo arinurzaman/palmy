@@ -274,7 +274,7 @@ $jum_pesan = $query->num_rows();
                         <div class="form-group">
                             <label for="diameter" class="col-sm-4 control-label">Diameter</label>
                             <div class="col-sm-7">
-                                <input type="number" name="xdiameter" class="form-control" id="ket"
+                                <input type="text" name="xdiameter" class="form-control" id="ket"
                                     placeholder="Diameter" required>
                             </div>
                         </div>
@@ -282,7 +282,7 @@ $jum_pesan = $query->num_rows();
                         <div class="form-group">
                             <label for="size" class="col-sm-4 control-label">Size</label>
                             <div class="col-sm-7">
-                                <input type="number" name="xsize" class="form-control" id="ket" placeholder="Size"
+                                <input type="text" name="xsize" class="form-control" id="ket" placeholder="Size"
                                     required>
                             </div>
                         </div>
@@ -290,7 +290,7 @@ $jum_pesan = $query->num_rows();
                         <div class="form-group">
                             <label for="streght" class="col-sm-4 control-label">Streght</label>
                             <div class="col-sm-7">
-                                <input type="number" name="xstreght" class="form-control" id="ket" placeholder="Streght"
+                                <input type="text" name="xstreght" class="form-control" id="ket" placeholder="Streght"
                                     required>
                             </div>
                         </div>
@@ -386,7 +386,7 @@ $jum_pesan = $query->num_rows();
                         <div class="form-group">
                             <label for="diameter" class="col-sm-4 control-label">Diameter</label>
                             <div class="col-sm-7">
-                                <input type="number" name="xdiameter" class="form-control"
+                                <input type="text" name="xdiameter" class="form-control"
                                     value="<?php echo $diameter; ?>" placeholder="Diameter" required>
                             </div>
                         </div>
@@ -394,7 +394,7 @@ $jum_pesan = $query->num_rows();
                         <div class="form-group">
                             <label for="size" class="col-sm-4 control-label">Size</label>
                             <div class="col-sm-7">
-                                <input type="number" name="xsize" class="form-control" value="<?php echo $size; ?>"
+                                <input type="text" name="xsize" class="form-control" value="<?php echo $size; ?>"
                                     placeholder="Size" required>
                             </div>
                         </div>
@@ -402,7 +402,7 @@ $jum_pesan = $query->num_rows();
                         <div class="form-group">
                             <label for="streght" class="col-sm-4 control-label">Streght</label>
                             <div class="col-sm-7">
-                                <input type="number" name="xstreght" class="form-control"
+                                <input type="text" name="xstreght" class="form-control"
                                     value="<?php echo $streght; ?>" placeholder="Streght" required>
                             </div>
                         </div>
