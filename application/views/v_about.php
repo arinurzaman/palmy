@@ -5,27 +5,27 @@
     <title>Palmy | About</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="shortcut icon" href="<?= base_url('assets/')?>images/Palmy.png" type="image/x-icon">
+    <link rel="shortcut icon" href="<?= base_url('assets/') ?>images/Palmy.png" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
-    <link rel="stylesheet" href="<?= base_url('assets/')?>css/open-iconic-bootstrap.min.css">
-    <link rel="stylesheet" href="<?= base_url('assets/')?>css/animate.css">
-    <link rel="stylesheet" href="<?= base_url('assets/')?>css/owl.carousel.min.css">
-    <link rel="stylesheet" href="<?= base_url('assets/')?>css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="<?= base_url('assets/')?>css/magnific-popup.css">
-    <link rel="stylesheet" href="<?= base_url('assets/')?>css/aos.css">
-    <link rel="stylesheet" href="<?= base_url('assets/')?>css/ionicons.min.css">
-    <link rel="stylesheet" href="<?= base_url('assets/')?>css/bootstrap-datepicker.css">
-    <link rel="stylesheet" href="<?= base_url('assets/')?>css/jquery.timepicker.css">
-    <link rel="stylesheet" href="<?= base_url('assets/')?>css/flaticon.css">
-    <link rel="stylesheet" href="<?= base_url('assets/')?>css/icomoon.css">
-    <link rel="stylesheet" href="<?= base_url('assets/')?>css/style.css">
+    <link rel="stylesheet" href="<?= base_url('assets/') ?>css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="<?= base_url('assets/') ?>css/animate.css">
+    <link rel="stylesheet" href="<?= base_url('assets/') ?>css/owl.carousel.min.css">
+    <link rel="stylesheet" href="<?= base_url('assets/') ?>css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="<?= base_url('assets/') ?>css/magnific-popup.css">
+    <link rel="stylesheet" href="<?= base_url('assets/') ?>css/aos.css">
+    <link rel="stylesheet" href="<?= base_url('assets/') ?>css/ionicons.min.css">
+    <link rel="stylesheet" href="<?= base_url('assets/') ?>css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="<?= base_url('assets/') ?>css/jquery.timepicker.css">
+    <link rel="stylesheet" href="<?= base_url('assets/') ?>css/flaticon.css">
+    <link rel="stylesheet" href="<?= base_url('assets/') ?>css/icomoon.css">
+    <link rel="stylesheet" href="<?= base_url('assets/') ?>css/style.css">
     <script type="text/javascript">
-    function googleTranslateElementInit() {
-        new google.translate.TranslateElement({
-            pageLanguage: 'id'
-        }, 'google_translate_element');
-    }
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'id'
+            }, 'google_translate_element');
+        }
     </script>
     <script type="text/javascript" src="<?= base_url('assets/') ?>js/googletranslate.js"></script>
 </head>
@@ -37,8 +37,7 @@
             <a class="navbar-brand" href="<?= base_url('Home'); ?>">
                 <img src="assets/images/Palmy.png" width="50"> &nbsp; Palmy
             </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
-                aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="oi oi-menu"></span> Menu
             </button>
 
@@ -67,7 +66,7 @@
                 <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-center">
                     <div class="col-md-7 col-sm-12 text-center ftco-animate">
                         <h1 class="mb-3 mt-5 bread">About</h1>
-                        <p class="breadcrumbs"><span class="mr-2"><a href="<?= base_url('Home')?>">Home</a></span>
+                        <p class="breadcrumbs"><span class="mr-2"><a href="<?= base_url('Home') ?>">Home</a></span>
                             <span>About</span>
                         </p>
                     </div>
@@ -86,12 +85,10 @@
                         </div>
                     </div>
                     <div class="md-5">
-                        <p style="text-align: justify;">
-                            Our company is leading agribusiness companies which also trading company of agricultural and
-                            plantation products and focuses on the palm oil industry, We also innovate in waste products
-                            turning into high economic value products, such as Palmrope, Palmesh etc.
-                            We are committed Increasing the level of community welfare though empowering local
-                            communities.
+                        <p style="text-align: justify-center;">
+                            Our company is leading agribusiness companies which also trading company of agricultural and plantation products and focuses on the palm oil industry.
+                            <br>Oil palm has a high productivity, for example in 2020 the area of production land is 11.99 million Ha with an average production of 24 Tons/Ha/Year, It can produce 287,760,000 Ton/Year of fresh fruit bunches (FFB). With an about 20% of the total potential, so 57,552,000 tons/year of empty fruit bunch (EFB) were obtained. When compared with coconut fiber 1.8 million Ton/Year and dust 3.3 million Ton/Y a total of 5.1 million Ton/Year, the fiber potential of EFB is bigger. Products from empty fruit bunch have large fibers so that they are stronger than coconut fibers.
+                            <br>With the potential number of EFB, the stock for raw materials is abundant, so we also innovate in waste products turning into high economic value products, such as Palmrope, Palmmesh etc. We are committed Increasing the level of community welfare though empowering local communities.
                         </p>
                     </div>
                 </div>
@@ -100,8 +97,7 @@
     </section>
 
 
-    <section class="ftco-section ftco-counter img mt-5" id="section-counter"
-        style="background-image: url(assets/images/bg-3.jpg);" data-stellar-background-ratio="0.5">
+    <section class="ftco-section ftco-counter img mt-5" id="section-counter" style="background-image: url(assets/images/bg-3.jpg);" data-stellar-background-ratio="0.5">
         <div class="container">
             <div class="row d-md-flex align-items-center justify-content-center">
                 <div class="col-lg-4">
@@ -117,7 +113,7 @@
                         <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
                             <div class="block-18 text-center">
                                 <div class="text">
-                                    <strong class="number" data-number="18">0</strong>
+                                    <strong class="number" data-number="2">0</strong>
                                     <span>Years of Experienced</span>
                                 </div>
                             </div>
@@ -125,7 +121,7 @@
                         <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
                             <div class="block-18 text-center">
                                 <div class="text">
-                                    <strong class="number" data-number="351">0</strong>
+                                    <strong class="number" data-number="12">0</strong>
                                     <span>Happy Clients</span>
                                 </div>
                             </div>
@@ -133,7 +129,7 @@
                         <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
                             <div class="block-18 text-center">
                                 <div class="text">
-                                    <strong class="number" data-number="564">0</strong>
+                                    <strong class="number" data-number="134">0</strong>
                                     <span>Finished Projects</span>
                                 </div>
                             </div>
@@ -181,8 +177,8 @@
                             <ul>
                                 <li>
                                     <span class="icon icon-map-marker"></span><span class="text">
-Kebayoran Square
-Blok Q, Kav C-20, Kel. Pondok Jaya, Kec. Pondok Aren, <br />
+                                        Kebayoran Square
+                                        Blok Q, Kav C-20, Kel. Pondok Jaya, Kec. Pondok Aren, <br />
                                         Tangerang Selatan, Banten - 15220</span>
                                 </li>
                                 <li>
@@ -190,8 +186,7 @@ Blok Q, Kav C-20, Kel. Pondok Jaya, Kec. Pondok Aren, <br />
                                             5251008 Ext. 73146</span></a>
                                 </li>
                                 <li>
-                                    <a href="mailto:marketing@palmy.co.id"><span class="icon icon-envelope"></span><span
-                                            class="text">marketing@palmy.co.id</span></a>
+                                    <a href="mailto:marketing@palmy.co.id"><span class="icon icon-envelope"></span><span class="text">marketing@palmy.co.id</span></a>
                                 </li>
                             </ul>
                         </div>
@@ -203,7 +198,7 @@ Blok Q, Kav C-20, Kel. Pondok Jaya, Kec. Pondok Aren, <br />
                     <p>
                         Copyright &copy;
                         <script>
-                        document.write(new Date().getFullYear());
+                            document.write(new Date().getFullYear());
                         </script>
                         PT Mandiri Palmera Agrindo
                     </p>
@@ -217,29 +212,28 @@ Blok Q, Kav C-20, Kel. Pondok Jaya, Kec. Pondok Aren, <br />
     <!-- loader -->
     <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
             <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
-            <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
-                stroke="#F96D00" />
+            <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00" />
         </svg></div>
 
 
-    <script src="<?= base_url('assets/')?>js/jquery.min.js"></script>
-    <script src="<?= base_url('assets/')?>js/jquery-migrate-3.0.1.min.js"></script>
-    <script src="<?= base_url('assets/')?>js/popper.min.js"></script>
-    <script src="<?= base_url('assets/')?>js/bootstrap.min.js"></script>
-    <script src="<?= base_url('assets/')?>js/jquery.easing.1.3.js"></script>
-    <script src="<?= base_url('assets/')?>js/jquery.waypoints.min.js"></script>
-    <script src="<?= base_url('assets/')?>js/jquery.stellar.min.js"></script>
-    <script src="<?= base_url('assets/')?>js/owl.carousel.min.js"></script>
-    <script src="<?= base_url('assets/')?>js/jquery.magnific-popup.min.js"></script>
-    <script src="<?= base_url('assets/')?>js/aos.js"></script>
-    <script src="<?= base_url('assets/')?>js/jquery.animateNumber.min.js"></script>
-    <script src="<?= base_url('assets/')?>js/bootstrap-datepicker.js"></script>
-    <script src="<?= base_url('assets/')?>js/jquery.timepicker.min.js"></script>
-    <script src="<?= base_url('assets/')?>js/scrollax.min.js"></script>
+    <script src="<?= base_url('assets/') ?>js/jquery.min.js"></script>
+    <script src="<?= base_url('assets/') ?>js/jquery-migrate-3.0.1.min.js"></script>
+    <script src="<?= base_url('assets/') ?>js/popper.min.js"></script>
+    <script src="<?= base_url('assets/') ?>js/bootstrap.min.js"></script>
+    <script src="<?= base_url('assets/') ?>js/jquery.easing.1.3.js"></script>
+    <script src="<?= base_url('assets/') ?>js/jquery.waypoints.min.js"></script>
+    <script src="<?= base_url('assets/') ?>js/jquery.stellar.min.js"></script>
+    <script src="<?= base_url('assets/') ?>js/owl.carousel.min.js"></script>
+    <script src="<?= base_url('assets/') ?>js/jquery.magnific-popup.min.js"></script>
+    <script src="<?= base_url('assets/') ?>js/aos.js"></script>
+    <script src="<?= base_url('assets/') ?>js/jquery.animateNumber.min.js"></script>
+    <script src="<?= base_url('assets/') ?>js/bootstrap-datepicker.js"></script>
+    <script src="<?= base_url('assets/') ?>js/jquery.timepicker.min.js"></script>
+    <script src="<?= base_url('assets/') ?>js/scrollax.min.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false">
     </script>
-    <script src="<?= base_url('assets/')?>js/google-map.js"></script>
-    <script src="<?= base_url('assets/')?>js/main.js"></script>
+    <script src="<?= base_url('assets/') ?>js/google-map.js"></script>
+    <script src="<?= base_url('assets/') ?>js/main.js"></script>
 
 </body>
 
