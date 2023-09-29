@@ -90,16 +90,16 @@
                 <?php foreach ($news as $n) { ?>
                     <div class="col-md-4 ftco-animate">
                         <div class="blog-entry">
-                            <a href="" class="block-20">
+                            <a href="<?php echo site_url('artikel/' . $n->tulisan_slug); ?>" class="block-20">
                                 <img src="<?= base_url('assets/images/' . $n->tulisan_gambar) ?>">
                             </a>
 
                             <div class="text d-flex py-3">
                                 <div class="meta mb-3">
-                                    <div><?= $n->tulisan_tanggal ?></div>
+                                    <!-- <div><?= $n->tulisan_tanggal ?></div> -->
                                     <div><?= $n->tulisan_author ?></div>
                                     <div>
-                                        <span class="icon-chat"></span>
+                                        <span class="icon-eye"></span>
                                         <?= $n->tulisan_views ?>
                                     </div>
                                 </div>

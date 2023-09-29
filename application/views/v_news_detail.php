@@ -59,7 +59,7 @@
     <!-- END nav -->
 
     <section class="home-slider js-fullheight owl-carousel">
-        <div class="slider-item js-fullheight" style="background-image: url(<?php echo base_url();?>./assets/images/bg-1.jpg);">
+        <div class="slider-item js-fullheight" style="background-image: url(<?php echo base_url().'assets/images/' . $image?>);">
             <div class="overlay"></div>
             <div class="container">
                 <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-end" data-scrollax-parent="true">
@@ -76,7 +76,6 @@
     <section class="ftco-section">
         <div class="container">
             <div class="row justify-content-center pb-3 mt-4">
-                <img src="<?php echo base_url().'assets/images/' . $image?>" class="img-fluid" alt="blog-img">
                 <div class="col-md-7 heading-section ftco-animate">
                     <div class="meta mb-3"><br>
                         <div>

@@ -173,11 +173,7 @@
                     </div>
                     <div class="md-5">
                         <p style="text-align: justify;">
-                            Our company is leading agribusiness companies which also trading company of agricultural and
-                            plantation products and focuses on the palm oil industry, We also innovate in waste products
-                            turning into high economic value products, such as Palmrope, Palmesh etc.
-                            We are committed Increasing the level of community welfare though empowering local
-                            communities. <a href="<?= base_url('About'); ?>"> <i><b>Read More</b></i> </a>
+                        Perusahaan kami merupakan perusahaan agrobisnis terkemuka yang juga merupakan perusahaan dagang hasil pertanian dan perkebunan serta fokus pada industri kelapa sawit. Kelapa sawit mempunyai produktivitas yang tinggi, misalnya pada tahun 2020 luas lahan produksinya 11,99 Juta Ha dengan rata-rata produksi 24 Ton/Ha/Tahun, mampu menghasilkan tandan buah segar (TBS) 287.760.000 Ton/Tahun. Dengan potensi sekitar 20% dari total, maka diperoleh tandan kosong (EFB) sebesar 57.552.000 ton/tahun. Jika dibandingkan dengan sabut kelapa 1,8 juta Ton/Tahun dan debu 3,3 juta Ton/Y total 5,1 juta Ton/Tahun, maka potensi serat TKKS lebih besar. Produk dari tandan kosong mempunyai serat yang besar sehingga lebih kuat dibandingkan serabut kelapa. Dengan potensi jumlah TKKS maka stok bahan baku melimpah, sehingga kami juga melakukan inovasi produk limbah menjadi produk bernilai ekonomi tinggi seperti Palmrope, Palmmesh dll. Kami berkomitmen Meningkatkan tingkat kesejahteraan masyarakat melalui pemberdayaan masyarakat lokal. <a href="<?= base_url('About'); ?>"> <i><b>Read More</b></i> </a>
                         </p>
                     </div>
                 </div>

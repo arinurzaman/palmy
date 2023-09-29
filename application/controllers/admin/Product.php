@@ -44,17 +44,26 @@ class Product extends CI_Controller
 				$this->load->library('image_lib', $config);
 				$this->image_lib->resize();
 
-				$photo			= $gbr['file_name'];
-				$nama			= strip_tags($this->input->post('xnama'));
-				$title			= strip_tags($this->input->post('xtitle'));
-				$ket			= strip_tags($this->input->post('xket'));
-				$spesifikasi	= strip_tags($this->input->post('xspesifikasi'));
-				$material		= strip_tags($this->input->post('xmaterial'));
-				$diameter		= strip_tags($this->input->post('xdiameter'));
-				$size			= strip_tags($this->input->post('xsize'));
-				$streght		= strip_tags($this->input->post('xstreght'));
+				$photo				= $gbr['file_name'];
+				$nama				= strip_tags($this->input->post('xnama'));
+				$title				= strip_tags($this->input->post('xtitle'));
+				$ket				= strip_tags($this->input->post('xket'));
+				$spesifikasi		= strip_tags($this->input->post('xspesifikasi'));
+				$material			= strip_tags($this->input->post('xmaterial'));
+				$spesifikasi_1		= strip_tags($this->input->post('xspesifikasi1'));
+				$v_spesifikasi_1	= strip_tags($this->input->post('vxspesifikasi1'));
+				$spesifikasi_2		= strip_tags($this->input->post('xspesifikasi2'));
+				$v_spesifikasi_2	= strip_tags($this->input->post('vxspesifikasi2'));
+				$spesifikasi_3		= strip_tags($this->input->post('xspesifikasi3'));
+				$v_spesifikasi_3	= strip_tags($this->input->post('vxspesifikasi3'));
+				$spesifikasi_4		= strip_tags($this->input->post('xspesifikasi4'));
+				$v_spesifikasi_4	= strip_tags($this->input->post('vxspesifikasi4'));
+				$spesifikasi_5		= strip_tags($this->input->post('xspesifikasi5'));
+				$v_spesifikasi_5	= strip_tags($this->input->post('vxspesifikasi5'));
+				$spesifikasi_6		= strip_tags($this->input->post('xspesifikasi6'));
+				$v_spesifikasi_6	= strip_tags($this->input->post('vxspesifikasi6'));
 
-				$this->m_product->simpan_product($nama, $title, $ket, $spesifikasi, $material, $diameter, $size, $streght, $photo);
+				$this->m_product->simpan_product($nama, $title, $ket, $spesifikasi, $material, $spesifikasi_1, $v_spesifikasi_1, $spesifikasi_2, $v_spesifikasi_2, $spesifikasi_3, $v_spesifikasi_3, $spesifikasi_4, $v_spesifikasi_4, $spesifikasi_5, $v_spesifikasi_5, $spesifikasi_6, $v_spesifikasi_6, $photo);
 				echo $this->session->set_flashdata('msg','success');
 				redirect('admin/product');
 			}else{
@@ -62,16 +71,25 @@ class Product extends CI_Controller
 				redirect('admin/product');
 			}
 		}else{
-				$nama			= strip_tags($this->input->post('xnama'));
-				$title			= strip_tags($this->input->post('xtitle'));
-				$ket			= strip_tags($this->input->post('xket'));
-				$spesifikasi	= strip_tags($this->input->post('xspesifikasi'));
-				$material		= strip_tags($this->input->post('xmaterial'));
-				$diameter		= strip_tags($this->input->post('xdiameter'));
-				$size			= strip_tags($this->input->post('xsize'));
-				$streght		= strip_tags($this->input->post('xstreght'));
+				$nama				= strip_tags($this->input->post('xnama'));
+				$title				= strip_tags($this->input->post('xtitle'));
+				$ket				= strip_tags($this->input->post('xket'));
+				$spesifikasi		= strip_tags($this->input->post('xspesifikasi'));
+				$material			= strip_tags($this->input->post('xmaterial'));
+				$spesifikasi_1		= strip_tags($this->input->post('xspesifikasi1'));
+				$v_spesifikasi_1	= strip_tags($this->input->post('vxspesifikasi1'));
+				$spesifikasi_2		= strip_tags($this->input->post('xspesifikasi2'));
+				$v_spesifikasi_2	= strip_tags($this->input->post('vxspesifikasi2'));
+				$spesifikasi_3		= strip_tags($this->input->post('xspesifikasi3'));
+				$v_spesifikasi_3	= strip_tags($this->input->post('vxspesifikasi3'));
+				$spesifikasi_4		= strip_tags($this->input->post('xspesifikasi4'));
+				$v_spesifikasi_4	= strip_tags($this->input->post('vxspesifikasi4'));
+				$spesifikasi_5		= strip_tags($this->input->post('xspesifikasi5'));
+				$v_spesifikasi_5	= strip_tags($this->input->post('vxspesifikasi5'));
+				$spesifikasi_6		= strip_tags($this->input->post('xspesifikasi6'));
+				$v_spesifikasi_6	= strip_tags($this->input->post('vxspesifikasi6'));
 
-			$this->m_product->simpan_product_tanpa_img($nama, $title, $ket, $spesifikasi, $material, $diameter, $size, $streght);
+			$this->m_product->simpan_product_tanpa_img($nama, $title, $ket, $spesifikasi, $material, $spesifikasi_1, $v_spesifikasi_1, $spesifikasi_2, $v_spesifikasi_2, $spesifikasi_3, $v_spesifikasi_3, $spesifikasi_4, $v_spesifikasi_4, $spesifikasi_5, $v_spesifikasi_5, $spesifikasi_6, $v_spesifikasi_6 );
 			echo $this->session->set_flashdata('msg','success');
 			redirect('admin/product');
 		}
@@ -105,18 +123,27 @@ class Product extends CI_Controller
 				$path='./assets/images/product/' . $gambar;
 				unlink($path);
 
-				$photo			= $gbr['file_name'];
-				$kode			= $this->input->post('kode');
-				$nama			= strip_tags($this->input->post('xnama'));
-				$title			= strip_tags($this->input->post('xtitle'));
-				$ket			= strip_tags($this->input->post('xket'));
-				$spesifikasi	= strip_tags($this->input->post('xspesifikasi'));
-				$material		= strip_tags($this->input->post('xmaterial'));
-				$diameter		= strip_tags($this->input->post('xdiameter'));
-				$size			= strip_tags($this->input->post('xsize'));
-				$streght		= strip_tags($this->input->post('xstreght'));
+				$photo				= $gbr['file_name'];
+				$kode				= $this->input->post('kode');
+				$nama				= strip_tags($this->input->post('xnama'));
+				$title				= strip_tags($this->input->post('xtitle'));
+				$ket				= strip_tags($this->input->post('xket'));
+				$spesifikasi		= strip_tags($this->input->post('xspesifikasi'));
+				$material			= strip_tags($this->input->post('xmaterial'));
+				$spesifikasi_1		= strip_tags($this->input->post('xspesifikasi1'));
+				$v_spesifikasi_1	= strip_tags($this->input->post('vxspesifikasi1'));
+				$spesifikasi_2		= strip_tags($this->input->post('xspesifikasi2'));
+				$v_spesifikasi_2	= strip_tags($this->input->post('vxspesifikasi2'));
+				$spesifikasi_3		= strip_tags($this->input->post('xspesifikasi3'));
+				$v_spesifikasi_3	= strip_tags($this->input->post('vxspesifikasi3'));
+				$spesifikasi_4		= strip_tags($this->input->post('xspesifikasi4'));
+				$v_spesifikasi_4	= strip_tags($this->input->post('vxspesifikasi4'));
+				$spesifikasi_5		= strip_tags($this->input->post('xspesifikasi5'));
+				$v_spesifikasi_5	= strip_tags($this->input->post('vxspesifikasi5'));
+				$spesifikasi_6		= strip_tags($this->input->post('xspesifikasi6'));
+				$v_spesifikasi_6	= strip_tags($this->input->post('vxspesifikasi6'));
 
-				$this->m_product->update_product($kode, $nama, $title, $ket, $spesifikasi, $material, $diameter, $size, $streght, $photo);
+				$this->m_product->update_product($kode, $nama, $title, $ket, $spesifikasi, $material, $spesifikasi_1, $v_spesifikasi_1, $spesifikasi_2, $v_spesifikasi_2, $spesifikasi_3, $v_spesifikasi_3, $spesifikasi_4, $v_spesifikasi_4, $spesifikasi_5, $v_spesifikasi_5, $spesifikasi_6, $v_spesifikasi_6, $photo);
 				
 				echo $this->session->set_flashdata('msg','info');
 				redirect('admin/product');
@@ -126,17 +153,26 @@ class Product extends CI_Controller
 				redirect('admin/product');
 			}
 			}else{
-				$kode			= $this->input->post('kode');
-				$nama			= strip_tags($this->input->post('xnama'));
-				$title			= strip_tags($this->input->post('xtitle'));
-				$ket			= strip_tags($this->input->post('xket'));
-				$spesifikasi	= strip_tags($this->input->post('xspesifikasi'));
-				$material		= strip_tags($this->input->post('xmaterial'));
-				$diameter		= strip_tags($this->input->post('xdiameter'));
-				$size			= strip_tags($this->input->post('xsize'));
-				$streght		= strip_tags($this->input->post('xstreght'));
+				$kode				= $this->input->post('kode');
+				$nama				= strip_tags($this->input->post('xnama'));
+				$title				= strip_tags($this->input->post('xtitle'));
+				$ket				= strip_tags($this->input->post('xket'));
+				$spesifikasi		= strip_tags($this->input->post('xspesifikasi'));
+				$material			= strip_tags($this->input->post('xmaterial'));
+				$spesifikasi_1		= strip_tags($this->input->post('xspesifikasi1'));
+				$v_spesifikasi_1	= strip_tags($this->input->post('vxspesifikasi1'));
+				$spesifikasi_2		= strip_tags($this->input->post('xspesifikasi2'));
+				$v_spesifikasi_2	= strip_tags($this->input->post('vxspesifikasi2'));
+				$spesifikasi_3		= strip_tags($this->input->post('xspesifikasi3'));
+				$v_spesifikasi_3	= strip_tags($this->input->post('vxspesifikasi3'));
+				$spesifikasi_4		= strip_tags($this->input->post('xspesifikasi4'));
+				$v_spesifikasi_4	= strip_tags($this->input->post('vxspesifikasi4'));
+				$spesifikasi_5		= strip_tags($this->input->post('xspesifikasi5'));
+				$v_spesifikasi_5	= strip_tags($this->input->post('vxspesifikasi5'));
+				$spesifikasi_6		= strip_tags($this->input->post('xspesifikasi6'));
+				$v_spesifikasi_6	= strip_tags($this->input->post('vxspesifikasi6'));
 
-				$this->m_product->update_product_tanpa_img($kode, $nama, $title, $ket, $spesifikasi, $material, $diameter, $size, $streght);
+				$this->m_product->update_product_tanpa_img($kode, $nama, $title, $ket, $spesifikasi, $material, $spesifikasi_1, $v_spesifikasi_1, $spesifikasi_2, $v_spesifikasi_2, $spesifikasi_3, $v_spesifikasi_3, $spesifikasi_4, $v_spesifikasi_4, $spesifikasi_5, $v_spesifikasi_5, $spesifikasi_6, $v_spesifikasi_6);
 				echo $this->session->set_flashdata('msg','info');
 				redirect('admin/product');
 			} 

@@ -220,7 +220,7 @@ $jum_pesan = $query->num_rows();
 
     <!--Modal Add Product-->
     <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-        <div class="modal-dialog" role="document">
+        <div class="modal-dialog-lg" role="document">
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
@@ -272,28 +272,90 @@ $jum_pesan = $query->num_rows();
                         </div>
 
                         <div class="form-group">
-                            <label for="diameter" class="col-sm-4 control-label">Diameter</label>
+                            <label for="spesifikasi1" class="col-sm-4 control-label">Spesifikasi 1 Name</label>
                             <div class="col-sm-7">
-                                <input type="text" name="xdiameter" class="form-control" id="ket"
-                                    placeholder="Diameter" required>
+                                <input type="text" name="xspesifikasi1" class="form-control" id="ket" placeholder="Name of Spesifikasi 1">
                             </div>
                         </div>
 
                         <div class="form-group">
-                            <label for="size" class="col-sm-4 control-label">Size</label>
+                            <label for="vspesifikasi1" class="col-sm-4 control-label">Spesifikasi 1 Value</label>
                             <div class="col-sm-7">
-                                <input type="text" name="xsize" class="form-control" id="ket" placeholder="Size"
-                                    required>
+                                <input type="text" name="vxspesifikasi1" class="form-control" id="ket" placeholder="Value of Spesifikasi 1">
                             </div>
                         </div>
 
                         <div class="form-group">
-                            <label for="streght" class="col-sm-4 control-label">Streght</label>
+                            <label for="spesifikasi2" class="col-sm-4 control-label">Spesifikasi 2 Name</label>
                             <div class="col-sm-7">
-                                <input type="text" name="xstreght" class="form-control" id="ket" placeholder="Streght"
-                                    required>
+                                <input type="text" name="xspesifikasi2" class="form-control" id="ket" placeholder="Name of Spesifikasi 2">
                             </div>
                         </div>
+                        
+                        <div class="form-group">
+                            <label for="vspesifikasi2" class="col-sm-4 control-label">Spesifikasi 2 Value</label>
+                            <div class="col-sm-7">
+                                <input type="text" name="vxspesifikasi2" class="form-control" id="ket" placeholder="Value of Spesifikasi 2">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="spesifikasi3" class="col-sm-4 control-label">Spesifikasi 3 Name</label>
+                            <div class="col-sm-7">
+                                <input type="text" name="xspesifikasi3" class="form-control" id="ket" placeholder="Name of Spesifikasi 3">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="vspesifikasi3" class="col-sm-4 control-label">Spesifikasi 3 Value</label>
+                            <div class="col-sm-7">
+                                <input type="text" name="vxspesifikasi3" class="form-control" id="ket" placeholder="Value of Spesifikasi 3">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="spesifikasi4" class="col-sm-4 control-label">Spesifikasi 4 Name</label>
+                            <div class="col-sm-7">
+                                <input type="text" name="xspesifikasi4" class="form-control" id="ket" placeholder="Name of Spesifikasi 4">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="vspesifikasi4" class="col-sm-4 control-label">Spesifikasi 4 Value</label>
+                            <div class="col-sm-7">
+                                <input type="text" name="vxspesifikasi4" class="form-control" id="ket" placeholder="Value of Spesifikasi 4">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="spesifikasi5" class="col-sm-4 control-label">Spesifikasi 5 Name</label>
+                            <div class="col-sm-7">
+                                <input type="text" name="xspesifikasi5" class="form-control" id="ket" placeholder="Name of Spesifikasi 5">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="vspesifikasi5" class="col-sm-4 control-label">Spesifikasi 5 Value</label>
+                            <div class="col-sm-7">
+                                <input type="text" name="vxspesifikasi5" class="form-control" id="ket" placeholder="Value of Spesifikasi 5">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="spesifikasi6" class="col-sm-4 control-label">Spesifikasi 6 Name</label>
+                            <div class="col-sm-7">
+                                <input type="text" name="xspesifikasi6" class="form-control" id="ket" placeholder="Name of Spesifikasi 6">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="vspesifikasi6" class="col-sm-4 control-label">Spesifikasi 6 Value</label>
+                            <div class="col-sm-7">
+                                <input type="text" name="vxspesifikasi6" class="form-control" id="ket" placeholder="Value of Spesifikasi 6">
+                            </div>
+                        </div>
+
+                        
 
                         <div class="form-group">
                             <label for="inputUserName" class="col-sm-4 control-label">Photo</label>
@@ -315,20 +377,29 @@ $jum_pesan = $query->num_rows();
 
     <!--Modal Edit Product-->
     <?php foreach ($data->result_array() as $i) :
-    $id           = $i['product_id'];
-    $nama         = $i['product_nama'];
-    $title        = $i['product_title'];
-    $ket          = $i['product_ket'];
-    $spesifikasi  = $i['product_spesifikasi'];
-    $material     = $i['product_material'];
-    $diameter     = $i['product_diameter'];
-    $size         = $i['product_size'];
-    $streght      = $i['product_streght'];
+    $id               = $i['product_id'];
+    $nama             = $i['product_nama'];
+    $title            = $i['product_title'];
+    $ket              = $i['product_ket'];
+    $spesifikasi      = $i['product_spesifikasi'];
+    $material         = $i['product_material'];
+    $spesifikasi_1    = $i['spesifikasi_1'];
+    $v_spesifikasi_1  = $i['v_spesifikasi_1'];
+    $spesifikasi_2    = $i['spesifikasi_2'];
+    $v_spesifikasi_2  = $i['v_spesifikasi_2'];
+    $spesifikasi_3    = $i['spesifikasi_3'];
+    $v_spesifikasi_3  = $i['v_spesifikasi_3'];
+    $spesifikasi_4    = $i['spesifikasi_4'];
+    $v_spesifikasi_4  = $i['v_spesifikasi_4'];
+    $spesifikasi_5    = $i['spesifikasi_5'];
+    $v_spesifikasi_5  = $i['v_spesifikasi_5'];
+    $spesifikasi_6    = $i['spesifikasi_6'];
+    $v_spesifikasi_6  = $i['v_spesifikasi_6'];
     $photo        = $i['product_photo'];
   ?>
 
     <div class="modal fade" id="ModalEdit<?php echo $id; ?>" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-        <div class="modal-dialog" role="document">
+        <div class="modal-dialog-lg" role="document">
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
@@ -384,26 +455,86 @@ $jum_pesan = $query->num_rows();
                         </div>
 
                         <div class="form-group">
-                            <label for="diameter" class="col-sm-4 control-label">Diameter</label>
+                            <label for="spesifikasi_1" class="col-sm-4 control-label">Spesifikasi 1 Name</label>
                             <div class="col-sm-7">
-                                <input type="text" name="xdiameter" class="form-control"
-                                    value="<?php echo $diameter; ?>" placeholder="Diameter" required>
+                                <input type="text" name="xspesifikasi1" value="<?php echo $spesifikasi_1; ?>" class="form-control" placeholder="Name of Spesifikasi 1">
                             </div>
                         </div>
 
                         <div class="form-group">
-                            <label for="size" class="col-sm-4 control-label">Size</label>
+                            <label for="v_spesifikasi_1" class="col-sm-4 control-label">Spesifikasi 1 Value</label>
                             <div class="col-sm-7">
-                                <input type="text" name="xsize" class="form-control" value="<?php echo $size; ?>"
-                                    placeholder="Size" required>
+                                <input type="text" name="vxspesifikasi1" value="<?php echo $v_spesifikasi_1; ?>" class="form-control" placeholder="Value of Spesifikasi 1">
                             </div>
                         </div>
 
                         <div class="form-group">
-                            <label for="streght" class="col-sm-4 control-label">Streght</label>
+                            <label for="spesifikasi2" class="col-sm-4 control-label">Spesifikasi 2 Name</label>
                             <div class="col-sm-7">
-                                <input type="text" name="xstreght" class="form-control"
-                                    value="<?php echo $streght; ?>" placeholder="Streght" required>
+                                <input type="text" name="xspesifikasi2" value="<?php echo $spesifikasi_2; ?>" class="form-control" placeholder="Name of Spesifikasi 2">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="vspesifikasi2" class="col-sm-4 control-label">Spesifikasi 2 Value</label>
+                            <div class="col-sm-7">
+                                <input type="text" name="vxspesifikasi2" value="<?php echo $v_spesifikasi_2; ?>" class="form-control" placeholder="Value of Spesifikasi 2">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="spesifikasi3" class="col-sm-4 control-label">Spesifikasi 3 Name</label>
+                            <div class="col-sm-7">
+                                <input type="text" name="xspesifikasi3" value="<?php echo $spesifikasi_3; ?>" class="form-control" placeholder="Name of Spesifikasi 3">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="vspesifikasi3" class="col-sm-4 control-label">Spesifikasi 3 Value</label>
+                            <div class="col-sm-7">
+                                <input type="text" name="vxspesifikasi3" value="<?php echo $v_spesifikasi_3; ?>" class="form-control" placeholder="Value of Spesifikasi 3">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="spesifikasi4" class="col-sm-4 control-label">Spesifikasi 4 Name</label>
+                            <div class="col-sm-7">
+                                <input type="text" name="xspesifikasi4" value="<?php echo $spesifikasi_4; ?>" class="form-control" placeholder="Name of Spesifikasi 4">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="vspesifikasi4" class="col-sm-4 control-label">Spesifikasi 4 Value</label>
+                            <div class="col-sm-7">
+                                <input type="text" name="vxspesifikasi4" value="<?php echo $v_spesifikasi_4; ?>" class="form-control" placeholder="Value of Spesifikasi 4">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="spesifikasi5" class="col-sm-4 control-label">Spesifikasi 5 Name</label>
+                            <div class="col-sm-7">
+                                <input type="text" name="xspesifikasi5" value="<?php echo $spesifikasi_5; ?>" class="form-control" placeholder="Name of Spesifikasi 5">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="vspesifikasi5" class="col-sm-4 control-label">Spesifikasi 5 Value</label>
+                            <div class="col-sm-7">
+                                <input type="text" name="vxspesifikasi5" value="<?php echo $v_spesifikasi_5; ?>" class="form-control" placeholder="Value of Spesifikasi 5">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="spesifikasi6" class="col-sm-4 control-label">Spesifikasi 6 Name</label>
+                            <div class="col-sm-7">
+                                <input type="text" name="xspesifikasi6" value="<?php echo $spesifikasi_6; ?>" class="form-control" placeholder="Name of Spesifikasi 6">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="vspesifikasi6" class="col-sm-4 control-label">Spesifikasi 6 Value</label>
+                            <div class="col-sm-7">
+                                <input type="text" name="vxspesifikasi6" value="<?php echo $v_spesifikasi_6; ?>" class="form-control" placeholder="Value of Spesifikasi 6">
                             </div>
                         </div>
 
@@ -430,12 +561,21 @@ $jum_pesan = $query->num_rows();
     $id           = $i['product_id'];
     $nama         = $i['product_nama'];
     $title        = $i['product_title'];
-    $ket          = $i['product_ket'];
-    $spesifikasi  = $i['product_spesifikasi'];
-    $material     = $i['product_material'];
-    $diameter     = $i['product_diameter'];
-    $size         = $i['product_size'];
-    $streght      = $i['product_streght'];
+    $ket             = $i['product_ket'];
+    $spesifikasi        = $i['product_spesifikasi'];
+    $material        = $i['product_material'];
+    $spesifikasi_1    = $i['spesifikasi_1'];
+    $v_spesifikasi_1  = $i['v_spesifikasi_1'];
+    $spesifikasi_2    = $i['spesifikasi_2'];
+    $v_spesifikasi_2  = $i['v_spesifikasi_2'];
+    $spesifikasi_3    = $i['spesifikasi_3'];
+    $v_spesifikasi_3  = $i['v_spesifikasi_3'];
+    $spesifikasi_4    = $i['spesifikasi_4'];
+    $v_spesifikasi_4  = $i['v_spesifikasi_4'];
+    $spesifikasi_5    = $i['spesifikasi_5'];
+    $v_spesifikasi_5  = $i['v_spesifikasi_5'];
+    $spesifikasi_6    = $i['spesifikasi_6'];
+    $v_spesifikasi_6  = $i['v_spesifikasi_6'];
     $photo        = $i['product_photo'];
   ?>
     <!--Modal Hapus Product-->

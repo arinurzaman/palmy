@@ -84,10 +84,13 @@
                         <!-- <img src="<?= base_url('assets/images/product/' . $data['product_photo']) ?>" class="col-md-4 p-md-5 img img-2 order-md-last"> -->
                         <div class="col-md-4 p-md-5 order-md-last">
                             <h6 class="mb-3">Specification</h6>
-                            <p>Material : <?= $data['product_material'] ?></p>
-                            <p>Diameter : <?= $data['product_diameter'] ?></p>
-                            <p>Size : <?= $data['product_size'] ?></p>
-                            <p>Streght : <?= $data['product_streght'] ?></p>
+                            <p>Material  <?= $data['product_material'] ?></p>
+                            <p><?= $data['spesifikasi_1']?>  <?= $data['v_spesifikasi_1'] ?></p>
+                            <p><?= $data['spesifikasi_2']?>  <?= $data['v_spesifikasi_2'] ?></p>
+                            <p><?= $data['spesifikasi_3']?>  <?= $data['v_spesifikasi_3'] ?></p>
+                            <p><?= $data['spesifikasi_4']?>  <?= $data['v_spesifikasi_4'] ?></p>
+                            <p><?= $data['spesifikasi_5']?>  <?= $data['v_spesifikasi_5'] ?></p>
+                            <p><?= $data['spesifikasi_6']?>  <?= $data['v_spesifikasi_6'] ?></p>
                         </div>
                         <div class="col-md-8 wrap-about pb-md-5 ftco-animate">
                             <div class="heading-section mb-md-5 md-5 heading-section-with-line">
