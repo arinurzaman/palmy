@@ -8197,6 +8197,10 @@ textarea.form-control {
     height: 1px;
     content: '';
     background: #01A358; }
+    @media (max-width: 767.98px) {
+      .heading-section.heading-section-with-line {
+        /* top: 30px; */
+        bottom: 30px; } }
 
 .heading-section.heading-section-white .subheading {
   color: rgba(255, 255, 255, 0.7); }

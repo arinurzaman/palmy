@@ -82,7 +82,7 @@
                 <div class="col-md-10">
                     <div class="row no-gutters">
                         <!-- <img src="<?= base_url('assets/images/product/' . $data['product_photo']) ?>" class="col-md-4 p-md-5 img img-2 order-md-last"> -->
-                        <div class="col-md-4 p-md-5 order-md-last">
+                        <div class="col-md-4 p-md-5 order-md-last mb-5">
                             <h6 class="mb-3">Specification</h6>
                             <p>Material  <?= $data['product_material'] ?></p>
                             <p><?= $data['spesifikasi_1']?>  <?= $data['v_spesifikasi_1'] ?></p>
