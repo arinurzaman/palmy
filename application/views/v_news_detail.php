@@ -65,7 +65,7 @@
                 <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-end" data-scrollax-parent="true">
                     <div class="col-md-7 text ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
                         <h2 class="mb-4" style="color: white; text-transform: uppercase;" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">
-                        <?= $slug; ?>
+                        <?= $title; ?>
                         </h2>
                     </div>
                 </div>
@@ -87,7 +87,7 @@
                             </span>
                         </div>
                     </div>
-                    <h3 style="text-align: justify;"><?= $slug; ?></h3>
+                    <h3 style="text-align: justify;"><?= $title; ?></h3>
                 </div>
             </div>
 
